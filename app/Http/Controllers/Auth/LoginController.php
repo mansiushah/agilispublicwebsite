@@ -11,6 +11,7 @@ use App\Models\User;
 use App\Services\TwilioService;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Hash;
+use Carbon\Carbon;
 class LoginController extends Controller
 {
     use ApiResponser;
@@ -54,7 +55,7 @@ class LoginController extends Controller
         ]);
 
         $otp = rand(1000, 9999);
-
+        $expirySeconds = 159; // or you can use: (2 * 60) + 39
         $user = User::create([
             'full_name' => $request->full_name,
             'email' => $request->email,
@@ -62,6 +63,7 @@ class LoginController extends Controller
             'otp' => $otp,
             'otp_verify' => 0,
             'first_logon' => 1,
+            'expires_at' => Carbon::now()->addSeconds($expirySeconds)->timestamp,
         ]);
         //$user = auth()->guard('web')->user($user);
         // Send OTP via email

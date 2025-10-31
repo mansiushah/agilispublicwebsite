@@ -37,7 +37,6 @@
                                 <li><a href="{{url('/privacy-policy')}}">Privacy Policy</a></li>
                                 <li><a href="{{url('/cookie-policy')}}">Cookie Policy</a></li>
                                 <li><a href="https://www.agilis.dating/app-terms.html">App Terms</a></li>
-                                <li><a href="https://www.agilis.dating/app-terms.html">App Terms</a></li>
                                 <li><a href="https://www.agilis.dating/acceptable-use-policy.html">Acceptable Use Policy</a></li>
                                 <li><a href="https://www.agilis.dating/slavery.html">Modern Slavery Statement</a></li>
                             </ul>

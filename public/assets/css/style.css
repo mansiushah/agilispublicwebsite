@@ -115,11 +115,12 @@ header .navbar-nav {
 header .navbar-nav .nav-item {
     padding: 0 6px;
 }
+
 .nav-item.active .nav-link {
     color: #ff3366;
     border-bottom: 2px solid #ff3366;
-  }
-  
+}
+
 
 header .navbar-nav .nav-item.active .nav-link {
     border-bottom: 2px solid #fff;
@@ -1097,10 +1098,10 @@ footer .footer_bottom .header_bottom_lft p {
     font-size: 14px;
 }
 
-.dashboard_section_main {
+/* .dashboard_section_main {
     position: relative;
     top: -70px;
-}
+} */
 
 .dashboad_left_penal .nav-link.active,
 .dashboad_left_penal .nav-link {
@@ -1218,10 +1219,12 @@ footer .footer_bottom .header_bottom_lft p {
     font-weight: 600;
     font-family: OpenSans-SemiBold;
 }
+
 .dashboard_mdl {
     background-color: #0000001F;
     backdrop-filter: blur(3px);
 }
+
 .dashboard_register_request h4 {
     color: #000000;
     font-size: 22px;
@@ -1672,19 +1675,23 @@ button.bottom-chats_btn {
 /* Sidebar API */
 .api_main_wrapper {
     height: 100%;
-    
+
 }
+
 #blurOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(2px); /* This adds blur */
-  background: #3C506C99; /* Slight dark overlay */
-  z-index: 1000;
-  display: none; /* Hidden by default */
-  transition: 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    /* This adds blur */
+    background: #3C506C99;
+    /* Slight dark overlay */
+    z-index: 1000;
+    display: none;
+    /* Hidden by default */
+    transition: 0.3s ease;
 }
 
 .api_sub_wrapper {
@@ -1694,7 +1701,7 @@ button.bottom-chats_btn {
     height: 100%;
 }
 
-.api_left_slidebar {    
+.api_left_slidebar {
     width: 250px;
     min-width: 250px;
     background: #fff;
@@ -1721,7 +1728,7 @@ button.bottom-chats_btn {
 .api_rihgt_slidebar_lft {
     border-bottom: 1px solid #D6D6D6;
     margin-bottom: 16px;
-    padding-bottom: 16px;   
+    padding-bottom: 16px;
 
 }
 
@@ -1855,7 +1862,9 @@ button.bottom-chats_btn {
     color: #FB698E;
 }
 
-#api_copy_btn {
+#api_copy_btn,
+#ResponeCopyBtnone,
+#ResponeCopyBtntwo {
     color: #FFFFFF;
     font-size: 20px;
 }
@@ -1920,7 +1929,6 @@ button.bottom-chats_btn {
     flex: 1;
     padding: 10px;
     overflow-y: auto;
-    background: #fafafa;
     background: url('../img/chat-box-vector.png'), #fafafa;
     background-position: top left;
     background-size: contain;
@@ -2032,8 +2040,9 @@ button.bottom-chats_btn {
     font-weight: 400;
     border: none !important;
 }
+
 .api_suggection_mdl {
-	background: #3C506C99;
+    background: #3C506C99;
 }
 
 .api_suggection_form-group input:focus {
@@ -2095,3 +2104,89 @@ button.bottom-chats_btn {
 .sidebar_close:hover {
     color: #fff;
 }
+
+
+
+/* **********DASHBOARD CSS START********** */
+/* .dashboard_sidebar {
+    border: 1px solid #E6E6E6;
+    background: #fff !important;
+    height: 100%;
+} */
+
+.dashboard_sidebar .dashboard_sliderbar_menu {
+    padding: 16px;
+}
+
+.dashboard_sidebar .dashboard_sliderbar_menu .dashboard_menu_item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.dashboard_sidebar .dashboard_sliderbar_menu .dashboard_menu_item.dashboard_active {
+    background-color: #ECE6FB;
+}
+
+.dashboard_sidebar .dashboard_sliderbar_menu .dashboard_menu_item .dashboard_menu_item_img {
+    width: 40px;
+}
+
+.dashboard_sidebar .dashboard_sliderbar_menu .dashboard_menu_item span {
+    color: #333333;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.dashboard_sidebar .dashboard_sliderbar_menu .dashboard_menu_item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    padding: 18px 14px;
+}
+
+.dashboard_section_row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard_section_row .dashboard_section_row_lft {
+    flex: 32.33%;
+    max-width: 32.33%;
+    position: relative;
+    top: -70px;
+    border: 1px solid #E6E6E6;
+    background: #fff !important;
+    height: 100%;
+
+}
+
+.dashboard_section_row .dashboard_section_row_rht {
+    flex: 65.67%;
+    max-width: 65.67%;
+    position: relative;
+    top: -70px;
+}
+
+.dashboard_sidebar_close {
+    position: absolute;
+    right: 4px;
+    background: #2e0f7b;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    top: 5px;
+    line-height: 30px;
+    font-weight: 400;
+    display: none;
+
+}
+
+.dashboard_sidebar_menu_toggle {
+    display: none;
+}
+
+/* **********DASHBOARD CSS START********** */

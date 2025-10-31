@@ -1,0 +1,207 @@
+@media(max-width:991px) {
+
+    .landing_banner_lfttxt h2,
+    .beneficial_rht_bx h2 {
+        font-size: 30px;
+    }
+
+    .article_section .row .article-lft h2 {
+        font-size: 40px;
+        line-height: 120%;
+    }
+
+    .api_left_slidebar {
+        background: #fff;
+        position: absolute;
+        z-index: 9;
+        height: 100%;
+        left: -300px;
+        overflow-y: auto;
+    }
+
+    .api_rihgt_slidebar {
+        width: 100%;
+    }
+
+    .sidebar_close,
+    .sidebar_menu_toggle {
+        display: block !important;
+    }
+}
+
+@media(max-width:767px) {
+    .header {
+        background-color: #18014d;
+    }
+
+    header .navbar-nav {
+        align-items: flex-start;
+    }
+
+    header .navbar-nav .nav-item {
+        padding: 0 0;
+        margin-bottom: 17px;
+    }
+
+    .landing_banner_rhtimg {
+        margin-top: 50px;
+    }
+
+    .landing_banner_rhtimg {
+        padding-left: 0;
+    }
+
+    .toast_subdiv {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .toast {
+        bottom: -13px;
+    }
+
+    .toast.show {
+        padding: 10px 5px;
+    }
+
+    .offer_apply_bx {
+        padding: 50px 0;
+    }
+
+    .chat_box_main .chat-box {
+        width: 90%;
+    }
+}
+
+@media(max-width:575px) {
+    footer .footer_top .footer_bx h6 {
+        margin-top: 16px;
+    }
+
+    .landing_banner_lfttxt h2,
+    .features_top h2,
+    .download_section h2,
+    .social_section h2,
+    .term_condition_banner h2,
+    .offer_banner_bx h2,
+    .login_banner_box h2,
+    .article_section .row .article-lft h2,
+    .dashboard_ttl h2 {
+        font-size: 26px;
+    }
+
+    .landing_banner_lfttxt h2 {
+        line-height: 40px;
+    }
+
+    .term_section h2,
+    .choose_country_from h3,
+    .choose_country_state h3,
+    .dashboard_right_ttl h3,
+    .dashboard_register_request h4 {
+        font-size: 20px;
+    }
+
+    .beneficial_rht_bx ul li {
+        font-size: 16px;
+    }
+
+    .features_box h6,
+    .offer_banner_bx p,
+    .login_banner_box p {
+        font-size: 18px;
+    }
+
+    .social_subscribe form {
+        max-width: 100%;
+        padding: 0 50px;
+    }
+
+    .footer_bottom_main {
+        flex-direction: column;
+    }
+
+    footer .footer_bottom .header_bottom_lft {
+        margin-bottom: 16px;
+    }
+
+    .artilce_Slider_bx .slick-next,
+    .artilce_Slider_bx .slick-prev {
+        width: 26px;
+        height: 26px;
+    }
+
+    .artilce_Slider_bx .slick-next,
+    .artilce_Slider_bx .slick-prev {
+        background-size: 8px;
+    }
+
+}
+
+@media(max-width:420px) {
+    .social_subscribe form {
+        padding: 0 20px;
+    }
+
+    .offer_banner_bx p,
+    .dashboad_left_penal .nav-link span {
+        font-size: 16px;
+    }
+
+    .login_banner_box h2 {
+        font-size: 24px;
+    }
+
+    .verification_code_bx input {
+        width: 45px;
+        height: 45px !important;
+    }
+
+    .verification_code_bx {
+        gap: 12px;
+    }
+
+}
+
+@media(max-width:1199px) and (min-width:991px) {
+    .dashboad_left_penal .nav-link {
+        gap: 18px;
+        padding: 12px !important;
+    }
+}
+
+@media(max-width:991px) and (min-width:768px) {
+    .header .navbar-brand img {
+        max-width: 90px;
+    }
+
+    header .navbar-nav .nav-item .nav-link {
+        padding: 8px 4px;
+        font-size: 13px;
+    }
+
+    header .navbar-nav .nav-item {
+        padding: 0 4px;
+    }
+
+    header .navbar-nav .nav-item:nth-child(4),
+    .landing_login_btn {
+        width: 90px;
+    }
+
+    .drodwn_flg .dropdown button {
+        min-width: 165px;
+        font-size: 13px;
+    }
+
+    .dashboad_left_penal .nav-link {
+        gap: 18px;
+        padding: 12px !important;
+    }
+
+    .dashboad_left_penal .nav-link span {
+        font-size: 16px;
+    }
+
+}

@@ -51,13 +51,20 @@ Route::get('offers',function () { return view('offer')->with('title', 'Privacy P
 
 
 
-   //Auth Routes
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard')->middleware('auth');
+// ✅ Authenticated Dashboard Routes
+Route::middleware('auth')->prefix('dashboard')->group(function () {
+    Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/profile', [DashboardController::class, 'profile'])->name('profile');
+    Route::post('/profile', [DashboardController::class, 'profileUpdate'])->name('update.profile');
+    Route::get('/registerorg', [DashboardController::class, 'registerorg'])->name('registerorg');
+    Route::get('/knowledgebase', [DashboardController::class, 'knowledgebase'])->name('knowledgebase');
+    Route::get('/change-password', [DashboardController::class, 'changePassword'])->name('change-password');
+    Route::post('/change-password-update', [DashboardController::class, 'UpdatechangePassword'])->name('update.changepassword');
+});
 
-Route::get('change-password', [DashboardController::class, 'changePassword'])->name('change-password')->middleware('auth');
-   Route::post('change-password-update', [DashboardController::class, 'UpdatechangePassword'])->name('update.changepassword')->middleware('auth');
-Route::get('logout', [LoginController::class, 'logout'])->name('logout')->middleware('auth');
-Route::get('logout', [LoginController::class, 'logout'])->name('logout')->middleware('auth');
+// ✅ Logout Route
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout')->middleware('auth');
+
 
 
 

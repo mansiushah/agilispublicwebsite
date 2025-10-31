@@ -30,7 +30,7 @@
                     @csrf
                     <input type="hidden" name="email" class="form-control" value="{{ $email ?? '' }}">
                     <input type="hidden" name="otp" id="otp"> <!-- final OTP value -->
-                    <p>We have sent the verification code to your email <br><a href="#">loremipsum@mail.com</a><br>
+                    <p>We have sent the verification code to your email <br><a href="#">{{$email}}</a><br>
                         If you haven’t received this in your Inbox, we advise checking your Junk/Spam folder too.</p>
                     <div class="form-group">
                         <div class="verification_code_bx">
