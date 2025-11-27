@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
  @include('includes.head')
-
 <body>
     <!-- Header Section Start -->
       @include('includes.header')
@@ -34,18 +32,12 @@
                             on the Agilis app</h2>
 
                         <ul class="mt-4">
-                            <li><img src="{{ url('public/assets//img/squre.svg') }}" alt="squre" class="img-fluid"><span>Promote Your Offers
-                                    to users within any geographic area</span></li>
-                            <li><img src="{{ url('public/assets//img/squre.svg') }}" alt="squre" class="img-fluid"><span>A fair Fixed price
-                                    model that is easy to understand</span></li>
-                            <li><img src="{{ url('public/assets//img/squre.svg') }}" alt="squre" class="img-fluid"><span>Track ad
-                                    impressions, engagement, and redemptions with real-time analytics</span></li>
-                            <li><img src="{{ url('public/assets//img/squre.svg') }}" alt="squre" class="img-fluid"><span>Set your own budget
-                                    and keep in control of your finances</span></li>
-                            <li><img src="{{ url('public/assets//img/squre.svg') }}" alt="squre" class="img-fluid"><span>Partner with a
-                                    platform that values kindness, fairness, transparency and data privacy</span></li>
-                            <li><img src="{{ url('public/assets//img/squre.svg') }}" alt="squre" class="img-fluid"><span>Use our advertiser
-                                    portal and developer-friendly APIs to Publicise your Offers quickly</span></li>
+                            <li><img src="{{ url('public/assets//img/squre.svg') }}" alt="squre" class="img-fluid"><span>Promote your offers to users within any geographic area</span></li>
+                            <li><img src="{{ url('public/assets//img/squre.svg') }}" alt="squre" class="img-fluid"><span>A fair fixed price model that is easy to understand</span></li>
+                            <li><img src="{{ url('public/assets//img/squre.svg') }}" alt="squre" class="img-fluid"><span>Track ad impressions, engagement, and redemptions with real-time analytics</span></li>
+                            <li><img src="{{ url('public/assets//img/squre.svg') }}" alt="squre" class="img-fluid"><span>Set your own budget and keep in control of your finances</span></li>
+                            <li><img src="{{ url('public/assets//img/squre.svg') }}" alt="squre" class="img-fluid"><span>Partner with a platform that values kindness, fairness, transparency and data privacy</span></li>
+                            <li><img src="{{ url('public/assets//img/squre.svg') }}" alt="squre" class="img-fluid"><span>Use our advertiser portal and developer-friendly APIs to publicise your offers quickly</span></li>
 
                         </ul>
                     </div>

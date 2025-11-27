@@ -2190,3 +2190,110 @@ button.bottom-chats_btn {
 }
 
 /* **********DASHBOARD CSS START********** */
+
+
+/* Extra Pges CSS Stat */
+/* About Us Page CSS Start */
+.about_ttls h2 {
+    font-size: 32px ;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.about_ttls h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0px;
+    width: 55px;
+    height: 3px;
+    background: #d60ad6;
+}
+
+.about_ttls p ,
+.app_tems_bx p{
+    color: #747483;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.about_ttls h3,
+.app_tems_bx h3 a {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 28px;
+    position: relative;
+}
+
+/* About Us Page CSS End */
+
+/* App Term Condition Page CSS End */
+.app_tems_bx ul li ,
+.app_tems_bx ul li{
+    color: #747483;
+    font-size: 16px;
+    line-height: 32px;
+    list-style-type: disc;
+    margin-left: 16px;
+}
+.span_italic a{
+    font-style: italic;
+    color: #000;
+    font-weight: 500;
+}
+.span_italic a:hover,
+.spam_bold_anchor a:hover{
+    text-decoration: underline;
+}
+.span_bold{
+    color: #000 !important;
+    font-weight: 500 !important;
+}
+.spam_bold_anchor a{
+    color: #000;
+    font-weight: 500;
+}
+
+.term_list ul li {
+    list-style-type: disc;
+    color: #0070C0 !important;
+    line-height: 36px;
+    margin-left: 16px;
+}
+.term_list ul li:hover{
+    color: #0070C0 !important;
+    text-decoration: underline;
+    text-decoration-color: #0070C0;
+}
+.span_blue_italic{
+    color: #0070C0 !important;
+}
+.span_blue_italic:hover{
+    color: #0070C0 !important;
+    text-decoration: underline;
+    
+}
+.privacy_policy_list ul li{
+    list-style-type: decimal;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #0070C0;
+}
+.privacy_policy_list ul li a{
+    color: #0070C0;
+    font-weight: 600;
+}
+.privacy_policy_list ul li::marker{
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+.privacy_policy_list ul li:hover{
+    text-decoration: underline;
+    text-decoration-color: #000;
+}
+.modern_list li{
+    list-style-type: disc;
+}
+/* App Term Condition Page CSS End */

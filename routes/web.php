@@ -46,6 +46,11 @@ Route::post('verify-otp', [LoginController::class, 'verifyOtp'])->name('verify.o
 Route::get('terms-and-conditions', function () { return view('terms-and-conditions')->with('title', 'Terms and Conditions');});
 Route::get('privacy-policy', function () { return view('privacy-policy')->with('title', 'Privacy Policy');});
 Route::get('cookie-policy',function () { return view('cookie-policy')->with('title', 'Cookie Policy');});
+Route::get('about-us',function () { return view('about-us')->with('title', 'About Us');});
+Route::get('acceptable-use-policy',function () { return view('acceptable-use-policy')->with('title', 'Acceptable Use Policy');});
+Route::get('app-terms',function () { return view('app')->with('title', 'App Terms');});
+Route::get('morden-slavery',function () { return view('morden-slavery')->with('title', 'Modern Slavery Statement');});
+Route::get('choose-your-country',function () { return view('choose-your-country')->with('title', 'Choose Your Country');});
 Route::get('offers',function () { return view('offer')->with('title', 'Privacy Policy');});
 //After Login route
 
