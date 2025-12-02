@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
- @include('includes.head')
+ @include('en-gb.includes.head')
 
 <body>
     <!-- Header Section Start -->
-      @include('includes.header')
+      @include('en-gb.includes.header')
     <!-- Header Section End -->
         <!-- Landing Banner Section Start -->
     <section class="term_condition_banner">
@@ -353,9 +353,9 @@
     </section>
     <!-- Term And Constion Section End -->
     <!-- Footer Section CSS Start -->
-   @include('includes.footer')
+   @include('en-gb.includes.footer2')
     <!-- Footer Section CSS End -->
 </body>
 
-@include('includes.script')
+@include('en-gb.includes.script')
 </html>

@@ -97,9 +97,9 @@
                         <div class="footer_bx">
                             <h6>Apps</h6>
                             <ul>
-                                <li><a href="#"><img src="{{ url('public/assets/img/appstore.svg') }}" alt="appstore" class="img-fluid"></a>
+                                <li><a href="https://apps.apple.com/gb/app/agilis/id6479391708"><img src="{{ url('public/assets/img/appstore.svg') }}" alt="appstore" class="img-fluid"></a>
                                 </li>
-                                <li><a href="#"><img src="{{ url('public/assets/img/playstore.svg') }}" alt="playstore"
+                                <li><a href="https://play.google.com/store/apps/details?id=com.app.agilis"><img src="{{ url('public/assets/img/playstore.svg') }}" alt="playstore"
                                             class="img-fluid"></a></li>
                             </ul>
                         </div>
@@ -122,16 +122,17 @@
                                     <span class="pl-2">United States</span>
                                 </button>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="{{ url('en-us') }}"><img src="{{ url('public/assets/img/UK-Flag.svg') }}" alt="UK-Flag"
-                                            class="img-fluid"><span>United States</span></a>
-                                    <a class="dropdown-item" href="{{ url('en-au') }}"><img src="{{ url('public/assets/img/australia-flag.png') }}"
-                                            alt="australia-flag" class="img-fluid"><span>Australia</span></a>
-                                    <a class="dropdown-item" href="{{ url('en-ca') }}"><img src="{{ url('public/assets/img/canada-flag.png') }}"
-                                            alt="canada-flag" class="img-fluid"><span>Canada</span></a>
+                                        <a class="dropdown-item" href="{{ url('en-us/privacy-policy') }}"><img src="{{ url('public/assets/img/UK-Flag.svg')}}"
+                                                alt="UK-Flag" class="img-fluid"><span>United States</span></a>
+                                        <a class="dropdown-item" href="{{ url('en-au/privacy-policy') }}"><img src="{{ url('public/assets/img/australia-flag.png')}}"
+                                                alt="australia-flag" class="img-fluid"><span>Australia</span></a>
+                                        <a class="dropdown-item" href="{{ url('en-ca/privacy-policy') }}"><img src="{{ url('public/assets/img/canada-flag.png')}}"
+                                                alt="canada-flag" class="img-fluid"><span>Canada</span></a>
 
-                                    <a class="dropdown-item" href="{{ url('en-gb') }}"><img src="{{ url('public/assets/img/united-kingdom-flag.png') }}"
-                                            alt="united-kingdom-flag" class="img-fluid"><span>Great Britain</span></a>
-                                </div>
+                                        <a class="dropdown-item" href="{{ url('en-gb/privacy-policy') }}"><img src="{{ url('public/assets/img/united-kingdom-flag.png')}}"
+                                                alt="united-kingdom-flag" class="img-fluid"><span>Great
+                                                Britain</span></a>
+                                    </div>
                             </div>
                         </div>
                     </div>

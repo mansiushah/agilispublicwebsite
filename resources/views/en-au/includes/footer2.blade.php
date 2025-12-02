@@ -33,12 +33,12 @@
                         <div class="footer_bx">
                             <h6>Legal & Policies</h6>
                             <ul>
-                                <li><a href="{{url('/terms-and-conditions')}}">Terms & Conditions</a></li>
-                                <li><a href="{{url('/privacy-policy')}}">Privacy Policy</a></li>
-                                <li><a href="{{url('/cookie-policy')}}">Cookie Policy</a></li>
-                                <li><a href="{{url('/app-terms')}}">App Terms</a></li>
-                                <li><a href="{{url('/acceptable-use-policy')}}">Acceptable Use Policy</a></li>
-                                <li><a href="{{url('/morden-slavery')}}">Modern Slavery Statement</a></li>
+                                <li><a href="{{url('en-au/terms-and-conditions')}}">Terms & Conditions</a></li>
+                                <li><a href="{{url('en-au/privacy-policy')}}">Privacy Policy</a></li>
+                                <li><a href="{{url('en-au/cookie-policy')}}">Cookie Policy</a></li>
+                                <li><a href="{{url('en-au/app-terms')}}">App Terms</a></li>
+                                <li><a href="{{url('en-au/acceptable-use-policy')}}">Acceptable Use Policy</a></li>
+                                <li><a href="{{url('en-au/morden-slavery')}}">Modern Slavery Statement</a></li>
                             </ul>
                         </div>
                     </div>
@@ -56,11 +56,9 @@
                         <div class="footer_bx">
                             <h6>Apps</h6>
                             <ul>
-                                <li><a href="#"><img src="{{ url('public/assets/img/appstore.svg') }}" alt="appstore" class="img-fluid"></a>
+                                <li><a href="https://apps.apple.com/gb/app/agilis/id6479391708"><img src="{{ url('public/assets/img/appstore.svg') }}" alt="appstore" class="img-fluid"></a>
                                 </li>
-                                <li><a href="#"><img src="{{ url('public/assets/img/playstore.svg') }}" alt="playstore"
-                                            class="img-fluid"></a></li>
-                            </ul>
+                                <li><a href="https://play.google.com/store/apps/details?id=com.app.agilis"><img src="{{ url('public/assets/img/playstore.svg') }}" alt="playstore"  class="img-fluid"></a></li>                            </ul>
                         </div>
                     </div>
 

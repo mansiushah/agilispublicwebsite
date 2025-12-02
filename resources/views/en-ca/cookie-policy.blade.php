@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-@include('includes.head')
+@include('en-ca.includes.head')
 <body>
     <!-- Header Section Start -->
-      @include('includes.header')
+      @include('en-ca.includes.header')
     <!-- Header Section End -->
     <!-- Offer Banner Section Start -->
     <!-- Landing Banner Section Start -->
@@ -83,9 +83,9 @@
     <!-- Term And Constion Section End -->
 
     <!-- Footer Section CSS Start -->
-   @include('includes.footer')
+   @include('en-ca.includes.footer')
     <!-- Footer Section CSS End -->
 </body>
 
-@include('includes.script')
+@include('en-ca.includes.script')
 </html>

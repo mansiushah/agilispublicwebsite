@@ -58,7 +58,7 @@
     </section>
     <!-- Offer Apply Section End -->
     <!-- Features Section Start -->
-    <section class="features_section">
+    <section id="features" class="features_section">
         <div class="container">
             <div class="features_top">
                 <h2>Features</h2>
@@ -69,58 +69,55 @@
             <div class="row mt-5 justify-content-center">
                 <div class="col-12 col-sm-6 col-md-4 col-xl-4">
                     <div class="features_box">
-                        <img src="{{ url('public/assets//img/browse-freely.svg') }}" alt="browse-freely" class="img-fluid">
+                        <img src="{{ url('public/assets/img/browse-freely.svg') }}" alt="browse-freely" class="img-fluid">
                         <h6>Browse Freely</h6>
-                        <p>Scroll through multiple profiles at once, without being restricted to one-by-one swipes or
-                            hitting a paywall.</p>
+                        <p>Scroll through multiple profiles at once, without being restricted to one-by-one swipes or hitting a paywall.</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-xl-4">
                     <div class="features_box">
-                        <img src="{{ url('public/assets//img/check-likes.svg') }}" alt="check-likes" class="img-fluid">
-                        <h6>check Who likes you</h6>
+                        <img src="{{ url('public/assets/img/check-likes.svg') }}" alt="check-likes" class="img-fluid">
+                        <h6>Check Who Likes You</h6>
                         <p>See who likes you and express your interest too.</p>
                     </div>
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-4 col-xl-4">
                     <div class="features_box">
-                        <img src="{{ url('public/assets//img/search-filters.svg') }}" alt="search-filters" class="img-fluid">
-                        <h6>Unlimited search filters</h6>
-                        <p>Use a wide range of filters to find exactly what you're looking for - all without paying any
-                            money.</p>
+                        <img src="{{ url('public/assets/img/search-filters.svg') }}" alt="search-filters" class="img-fluid">
+                        <h6>Unlimited Search Filters</h6>
+                        <p>Use a wide range of filters to find exactly what you're looking for - all without paying any money.</p>
                     </div>
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-4 col-xl-4">
                     <div class="features_box">
-                        <img src="{{ url('public/assets//img/phone-video-calls.svg') }}" alt="phone-video-calls" class="img-fluid">
-                        <h6>In-app phone and video calls</h6>
+                        <img src="{{ url('public/assets/img/phone-video-calls.svg') }}" alt="phone-video-calls" class="img-fluid">
+                        <h6>In-App Phone And Video Calls</h6>
                         <p>Chat with your matches safely, without needing to exchange phone numbers.</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-xl-4">
                     <div class="features_box">
-                        <img src="{{ url('public/assets//img/meaningful-likes.svg') }}" alt="meaningful-likes" class="img-fluid">
-                        <h6>Meaningful likes</h6>
+                        <img src="{{ url('public/assets/img/meaningful-likes.svg') }}" alt="meaningful-likes" class="img-fluid">
+                        <h6>Meaningful Likes</h6>
                         <p>You can only like up to 10 people at a time, so every like actually means something.</p>
                     </div>
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-4 col-xl-4">
                     <div class="features_box">
-                        <img src="{{ url('public/assets//img/report-ghosting.svg') }}" alt="report-ghosting" class="img-fluid">
-                        <h6>Report ghosting</h6>
-                        <p>Yes, really. If someone ghosts you, there’s a way to report it.</p>
+                        <img src="{{ url('public/assets/img/report-ghosting.svg') }}" alt="report-ghosting" class="img-fluid">
+                        <h6>Report Ghosting</h6>
+                        <p>Yes, really. If someone ghosts you, there's a way to report it.</p>
                     </div>
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-4 col-xl-4">
                     <div class="features_box">
-                        <img src="{{ url('public/assets//img/fake-profiles.svg') }}" alt="fake-profiles" class="img-fluid">
-                        <h6>No fake profiles</h6>
-                        <p>So when you're engaging someone you know they are real people, not fake profiles created by
-                            us.</p>
+                        <img src="{{ url('public/assets/img/fake-profiles.svg') }}" alt="fake-profiles" class="img-fluid">
+                        <h6>No Fake Profiles</h6>
+                        <p>So when you're engaging someone you know they are real people, not fake profiles created by us.</p>
                     </div>
                 </div>
             </div>

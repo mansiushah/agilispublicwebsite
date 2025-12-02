@@ -263,7 +263,7 @@
     </section>
     <!-- Term And Constion Section End -->
     <!-- Footer Section CSS Start -->
-   @include('includes.footer')
+   @include('includes.footer2')
     <!-- Footer Section CSS End -->
 </body>
 

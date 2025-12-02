@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
- @include('includes.head')
+ @include('en-us.includes.head')
 
 <body>
     <!-- Header Section Start -->
-      @include('includes.header')
+      @include('en-us.includes.header')
     <!-- Header Section End -->
             <section class="term_condition_banner">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>Privacy policy</h2>
+                    <h2>Modern Slavery Statement</h2>
                 </div>
             </div>
         </div>
@@ -140,9 +140,9 @@
     </div>
     <!-- Term And Constion Section End -->
     <!-- Footer Section CSS Start -->
-   @include('includes.footer')
+   @include('en-us.includes.footer2')
     <!-- Footer Section CSS End -->
 </body>
 
-@include('includes.script')
+@include('en-us.includes.script')
 </html>

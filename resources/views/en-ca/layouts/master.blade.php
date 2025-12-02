@@ -17,10 +17,10 @@
     <div class="main-wrapper">
         <div class="main_sub_wrapper">
 
-            @include('includes.sidebar')
+            @include('en-ca.includes.sidebar')
 
             <div class="right_section">
-                @include('includes.header')
+                @include('en-ca.includes.header')
 
                 <div class="rignt_section_bottom">
                     @yield('content')
@@ -28,7 +28,7 @@
             </div>
         </div>
     </div>
-    @include('includes.footer')
+    @include('en-ca.includes.footer')
     {{-- ✅ This will load custom page scripts --}}
     @stack('scripts')
 </body>
