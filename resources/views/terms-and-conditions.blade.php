@@ -8,6 +8,7 @@
       @include('includes.header')
     <!-- Header Section End -->
         <!-- Landing Banner Section Start -->
+  <!-- Landing Banner Section Start -->
     <section class="term_condition_banner">
         <div class="container">
             <div class="row">
@@ -18,9 +19,8 @@
         </div>
     </section>
     <!-- Landing Banner Section End -->
-
     <!-- Term And Constion Section Start -->
-     <section class="about-us_sections">
+    <section class="about-us_sections">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 p-4">
@@ -32,7 +32,7 @@
                     <div class="about_ttls">
 
                         <h3>What's in these terms?</h3>
-                        <p>hese terms tell you the rules for using our website <span class="span_bold">(our
+                        <p>These terms tell you the rules for using our website <span class="span_bold">(our
                                 site).</span></p>
 
                         <p>Click on the links below to go straight to more information on each area:</p>
@@ -99,7 +99,7 @@
                             <p>These terms of use refer to the following additional terms, which also apply to your use
                                 of our site:</p>
                             <ul>
-                                <li>Our <span class="span_blue_italic"><a href="privacy-policy1.html">Privacy Policy.</a></span> See
+                                <li>Our <span class="span_blue_italic"><a href="privacy-policy.html">Privacy Policy.</a></span> See
                                     further under <span class="span_blue_italic"><a href="#">How we may use your
                                             personal information.</a></span></li>
                                 <li>Our <span class="span_blue_italic"><a href="acceptable-use-policy.html">Acceptable Use Policy,</a></span>
@@ -272,8 +272,8 @@
 
                      <div class="term_content_box">
                         <div class="app_tems_bx">
-                            <h3><a name=personalinformation>How we may use your personal informationt</a></h3>
-                            <p>We will only use your personal information as set out in our <span class="span_blue_italic"><a href="privacy-policy1.html"><i>Privacy Policy.</i></a></span></p>
+                            <h3><a name=personalinformation>How we may use your personal information</a></h3>
+                            <p>We will only use your personal information as set out in our <span class="span_blue_italic"><a href="privacy-policy.html"><i>Privacy Policy.</i></a></span></p>
                         </div>
                     </div>
 
@@ -353,7 +353,7 @@
     </section>
     <!-- Term And Constion Section End -->
     <!-- Footer Section CSS Start -->
-   @include('includes.footer2')
+   @include('includes.footer')
     <!-- Footer Section CSS End -->
 </body>
 

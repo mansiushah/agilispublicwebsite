@@ -140,7 +140,7 @@
     </div>
     <!-- Term And Constion Section End -->
     <!-- Footer Section CSS Start -->
-   @include('en-us.includes.footer2')
+   @include('en-us.includes.footer')
     <!-- Footer Section CSS End -->
 </body>
 

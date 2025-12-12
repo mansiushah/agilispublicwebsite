@@ -5,7 +5,7 @@
 
 <body>
     <!-- Header Section Start -->
-      @include('en-au.includes.header')
+    @include('en-au.includes.header')
     <!-- Header Section End -->
             <section class="term_condition_banner">
         <div class="container">
@@ -19,23 +19,20 @@
     <!-- Landing Banner Section End -->
 
     <!-- Term And Constion Section Start -->
-      <!-- Term And Constion Section Start -->
     <section class="about-us_sections">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 p-4">
 
                     <div class="about_ttls">
-                        <h2>Website terms and conditions of use</h2>
+                        <h2>Privacy policy</h2>
                     </div>
 
                     <div class="about_ttls">
 
-                        <h3>What's in these terms?</h3>
-                        <p>hese terms tell you the rules for using our website <span class="span_bold">(our
-                                site).</span></p>
+                        <p>Agilis respects your privacy and is committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you use our services (regardless of where you access them from) and tell you about your privacy rights and how the law protects you.</span></p>
 
-                        <p>Click on the links below to go straight to more information on each area:</p>
+                        <p>This privacy policy is provided in a layered format so you can click through to the specific areas set out below. Please also use the Glossary to understand the meaning of some of the terms used in this privacy policy.</p>
                     </div>
 
                     <div class="term_list privacy_policy_list">
@@ -43,7 +40,7 @@
                             <li><a href="#a671547">IMPORTANT INFORMATION AND WHO WE ARE</a></li>
                             <li><a href="#acceptterms">THE DATA WE COLLECT ABOUT YOU</a></li>
                             <li><a href="#otherterms">How is your personal data collected?</a></li>
-                            <li><a href="makechanges">How we use your personal data</a></li>
+                            <li><a href="#makechanges">How we use your personal data</a></li>
                             <li><a href="#changessite">Disclosures of your personal data</a></li>
                             <li><a href="#suspendwithdraw">International transfers</a></li>
                             <li><a href="#transferagreement">Data security</a></li>
@@ -113,7 +110,7 @@
                                 we have grouped together as follows:</p>
 
                             <ul>
-                                <li><span class="span_bold">Identity Data</span>includes first name, maiden name, last
+                                <li><span class="span_bold">Identity Data </span>includes first name, maiden name, last
                                     name, username or similar identifier, marital status, title, date of birth, and
                                     gender.</li>
                                 <li><span class="span_bold">Facial Data</span> to enable you to voluntarily verify your
@@ -169,7 +166,7 @@
                                 <li>
                                     <span class="span_bold">Direct interactions.</span> You may give us your Identity,
                                     Contact and Financial Data by filling in forms or by corresponding with us by post,
-                                    phone, email or otherwise. This includes personal data you provide when you
+                                    phone, email or otherwise. This includes personal data you provide when you:
                                     <ul>
                                         <li>Use our platforms and request estimates for the supply of products or
                                             services;</li>
@@ -589,7 +586,7 @@
                      <div class="term_content_box">
                         <div class="app_tems_bx">
                             <h3><a name=accountdetails>9. Your legal rights</a></h3>
-                            <p>Under certain circumstances, you have rights under data protection laws in relation to your personal data. Please click on the links below to find out more about these rights</p>
+                            <p>Under certain circumstances, you have rights under data protection laws in relation to your personal data. Please click on the links below to find out more about these rights:</p>
                             <ul>
                                 <li><a href="#1001">Request access to your personal data</a></li>
                                 <li><a href="#1002">Request correction of your personal data</a></li>
@@ -613,7 +610,7 @@
 
                     <div class="term_content_box">
                         <div class="app_tems_bx">
-                            <h3><a name=materialsite>10. GLOSSARY</a></h3>
+                            <h3><a name=materialsite>10. Glossary</a></h3>
                             <p class="span_bold">LAWFUL BASIS</p>
 
                             <p>Legitimate Interest means the interest of our business in conducting and managing our business to enable us to give you the best service/product and the best and most secure experience. We make sure we consider and balance any potential impact on you (both positive and negative) and your rights before we process your personal data for our legitimate interests. We do not use your personal data for activities where our interests are overridden by the impact on you (unless we have your consent or are otherwise required or permitted to by law). You can obtain further information about how we assess our legitimate interests against any potential impact on you in respect of specific activities by contacting us.</p>
@@ -637,11 +634,11 @@
                             <p>You have the right to:</p>
 
                             <div class="request_bx">
-                                <p><span class="span_bold"><a name="1001"></a></span> to your personal data (commonly known as a "data subject access request"). This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.</p>
+                                <p><span class="span_bold"><a name="1001">Request access</a></span> to your personal data (commonly known as a "data subject access request"). This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.</p>
 
                                 <p><span class="span_bold"><a name="1002">Request correction</a></span> of the personal data that we hold about you. This enables you to have any incomplete or inaccurate data we hold about you corrected, though we may need to verify the accuracy of the new data you provide to us.</p>
 
-                                <p><span class="span_bold"><a name="1003">Request erasure</a></span> of your personal data. This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing (see below), where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request. To request deletion of your data, simply contact us (email: <a href="#" class="span_bold">help@agilis.dating</a> ).</p>
+                                <p><span class="span_bold"><a name="1003">Request erasure</a></span> of your personal data. This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing (see below), where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request. To request deletion of your data, simply contact us (email: <a href="#" class="span_bold">help@agilis.dating</a>).</p>
 
                                 <p><span class="span_bold"><a name="1004">Object to processing</a></span> of your personal data where we are relying on a legitimate interest (or those of a third party) and there is something about your particular situation which makes you want to object to processing on this ground as you feel it impacts on your fundamental rights and freedoms. You also have the right to object where we are processing your personal data for direct marketing purposes. In some cases, we may demonstrate that we have compelling legitimate grounds to process your information which override your rights and freedoms.</p>
 
@@ -668,10 +665,8 @@
 
             </div>
     </section>
-    <!-- Term And Constion Section End -->
-    <!-- Term And Constion Section End -->
     <!-- Footer Section CSS Start -->
-   @include('en-au.includes.footer2')
+    @include('en-au.includes.footer')
     <!-- Footer Section CSS End -->
 </body>
 

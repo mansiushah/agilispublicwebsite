@@ -48,6 +48,10 @@ class PageController extends Controller
     {
         return view('terms-and-conditions');
     }
+    public function aboutusUseDefault()
+    {
+        return view('about-us');
+    }
 
     public function termsAndConditions($locale)
     {
@@ -89,14 +93,14 @@ class PageController extends Controller
 
         return view('app');
     }
-     public function CookiesDefault()
+     public function cookiePolicyUseDefault()
     {
-        return view('cookie');
+        return view('cookie-policy');
     }
 
     public function cookiePolicy($locale)
     {
-        $viewPath = $locale . '.cookie';
+        $viewPath = $locale . '.cookie-policy';
 
         if (view()->exists($viewPath)) {
             return view($viewPath, compact('locale'));
@@ -108,7 +112,10 @@ class PageController extends Controller
     {
         return view('offer');
     }
-
+    public function mordenSlaveryUseDefault()
+    {
+        return view('morden-slavery');
+    }
     public function offers($locale)
     {
         $viewPath = $locale . '.offer';
@@ -118,5 +125,15 @@ class PageController extends Controller
         }
 
         return view('offer');
+    }
+     public function mordenSlavery($locale)
+    {
+        $viewPath = $locale . '.morden-slavery';
+
+        if (view()->exists($viewPath)) {
+            return view($viewPath, compact('locale'));
+        }
+
+        return view('morden-slavery');
     }
 }

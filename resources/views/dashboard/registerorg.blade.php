@@ -32,12 +32,12 @@
                                     <form>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Company name *</label>
-                                            <input type="text" class="form-control" placeholder="Enter company name">
+                                            <input type="text" class="form-control" placeholder="Enter company name" name="company_name" value="{{ old('company_name') }}">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Trading name *</label>
-                                            <input type="text" class="form-control" placeholder="Enter trading name">
+                                            <input type="text" class="form-control" placeholder="Enter trading name" name="trading_name" value="{{ old('trading_name') }}">
                                         </div>
 
 

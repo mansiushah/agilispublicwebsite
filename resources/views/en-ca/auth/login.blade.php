@@ -25,7 +25,7 @@
                         {{ session('error') }}
                     </div>
                 @endif
-                <form action="{{ route('login.submit') }}" method="POST">
+                <form action="{{ locale_route('login.submit') }}" method="POST">
                     @csrf
                     <h2>Log In</h2>
                     <div class="form-group">

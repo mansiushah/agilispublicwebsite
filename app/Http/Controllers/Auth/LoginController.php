@@ -20,28 +20,66 @@ class LoginController extends Controller
     {
         $this->twilio = $twilio;
     }
+    private function loadAuthView($view, $data = [])
+    {
+        $locale = request()->route('locale'); // example: en-us
+
+        // If localized view exists → load it
+        if ($locale && view()->exists("$locale/auth/$view")) {
+            return view("$locale/auth/$view", $data);
+        }
+
+        // Otherwise → load default view
+        return view("auth.$view", $data);
+    }
+    private function detectLocale(Request $request)
+{
+    // 1. Check route
+    $locale = $request->route('locale');
+
+    if ($locale) {
+        return $locale;
+    }
+
+    // 2. Check URL manually
+    $uri = $request->getRequestUri(); // example: /en-us/login
+
+    foreach (['en-us','en-au','en-gb','en-ca'] as $lang) {
+        if (strpos($uri, "/$lang/") === 0 || strpos($uri, "/$lang") === 0) {
+            return $lang;
+        }
+    }
+
+    // 3. Default → no locale
+    return null;
+}
     public function showLoginForm()
     {
-        return view('auth.login');
+        return $this->loadAuthView('login');
     }
-    public function login(Request $request)
-    {
-         $validated = $request->validate([
-            'email' => 'required|email',
-            'password' => 'required',
-        ]);
-        if(auth()->guard('web')->attempt(['email' => $request->input('email'), 'password' => $request->input('password')]))
-        {
-            $user = auth()->guard('web')->user();
-            Auth::login($user);
-            //return view('auth.verify', compact('email'));
-            return redirect()->route('dashboard');
+public function login(Request $request)
+{
+    $validated = $request->validate([
+        'email' => 'required|email',
+        'password' => 'required',
+    ]);
+
+    if (auth()->attempt($validated)) {
+
+        // 🎯 Correct locale detection
+         $locale = $this->detectLocale($request);
+
+        if ($locale) {
+            return redirect()->route('locale.dashboard', ['locale' => $locale]);
         }
-        else
-        {
-            return back()->with('error','Your Username and Password are wrong.');
-        }
+
+        return redirect()->route('dashboard');
     }
+
+    return back()->with('error', 'Your Username and Password are wrong.');
+}
+
+
     public function showRegisterForm()
     {
         return view('auth.register');

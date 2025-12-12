@@ -4,10 +4,11 @@
  @include('en-gb.includes.head')
 
 <body>
-    <!-- Header Section Start -->
-      @include('en-gb.includes.header')
-    <!-- Header Section End -->
-            <section class="term_condition_banner">
+       <!-- Header Section Start -->
+       @include('en-gb.includes.header')
+       <!-- Header Section End -->
+         <!-- Landing Banner Section Start -->
+    <section class="term_condition_banner">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -16,11 +17,10 @@
             </div>
         </div>
     </section>
-    <!-- Landing Banner Section End -->
+
 
     <!-- Term And Constion Section Start -->
-      <!-- Term And Constion Section Start -->
-     <section class="about-us_sections">
+    <section class="about-us_sections">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 p-4">
@@ -163,7 +163,6 @@
                             <ul>
                                 <li>Be accurate (where it states facts).</li>
                                 <li>Be genuinely held (where it states opinions).</li>
-                                <li>Be genuinely held (where it states opinions).</li>
                                 <li>Comply with the law applicable in England and Wales and in any country from which it is posted.</li>
 
                             </ul>
@@ -212,7 +211,7 @@
                                         <li>directly exhort such persons to purchase or rent goods or services in a manner which exploits their inexperience or credulity;</li>
                                         <li>directly encourage such persons to persuade their parents or others to purchase or rent goods or services;</li>
                                         <li>exploit the trust of such persons in parents, teachers or others; or</li>
-                                        <li>nreasonably show such persons in dangerous situations.</li>
+                                        <li>unreasonably show such persons in dangerous situations.</li>
                                     </ul>
 
                                 </li>
@@ -238,7 +237,6 @@
                             <p>We exclude our liability for all action we may take in response to breaches of this acceptable use policy. The actions we may take are not limited to those described above, and we may take any other action we reasonably deem appropriate.</p>
                         </div>
                     </div>
-
                      <div class="term_content_box">
                         <div class="app_tems_bx">
                             <h3><a name=accountdetails>How this contract can be transferred</a></h3>
@@ -262,9 +260,9 @@
         </div>
     </section>
     <!-- Term And Constion Section End -->
-    <!-- Footer Section CSS Start -->
-   @include('en-gb.includes.footer2')
-    <!-- Footer Section CSS End -->
+       <!-- Footer Section CSS Start -->
+       @include('en-gb.includes.footer')
+       <!-- Footer Section CSS End -->
 </body>
 
 @include('en-gb.includes.script')

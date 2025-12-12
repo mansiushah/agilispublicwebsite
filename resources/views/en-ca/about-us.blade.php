@@ -671,7 +671,7 @@
     <!-- Term And Constion Section End -->
     <!-- Term And Constion Section End -->
     <!-- Footer Section CSS Start -->
-   @include('en-ca.includes.footer2')
+   @include('en-ca.includes.footer')
     <!-- Footer Section CSS End -->
 </body>
 

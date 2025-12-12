@@ -47,7 +47,7 @@
                         <div class="footer_bx">
                             <h6>Settings</h6>
                             <ul>
-                                <li><a href="Choose-Your-Country.html">Change Location</a></li>
+                                <li><a href="{{ url('choose-your-country') }}">Change Location</a></li>
                             </ul>
                         </div>
                     </div>

@@ -7,15 +7,18 @@
     <!-- Header Section Start -->
       @include('includes.header')
     <!-- Header Section End -->
-            <section class="term_condition_banner">
+    <!-- Landing Banner Section Start -->
+    <section class="term_condition_banner">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>Privacy policy</h2>
+                    <h2>About-us</h2>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Landing Banner Section End -->
+
     <!-- Term And Constion Section Start -->
     <section class="about-us_sections">
         <div class="container">
@@ -65,6 +68,7 @@
 
         </div>
     </section>
+    <!-- Term And Constion Section Start -->
     <!-- Term And Constion Section End -->
    @include('includes.footer')
     <!-- Footer Section CSS End -->

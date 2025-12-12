@@ -7,7 +7,7 @@
     <!-- Header Section Start -->
       @include('en-au.includes.header')
     <!-- Header Section End -->
-        <!-- Landing Banner Section Start -->
+      <!-- Landing Banner Section Start -->
     <section class="term_condition_banner">
         <div class="container">
             <div class="row">
@@ -18,9 +18,8 @@
         </div>
     </section>
     <!-- Landing Banner Section End -->
-
     <!-- Term And Constion Section Start -->
-     <section class="about-us_sections">
+    <section class="about-us_sections">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 p-4">
@@ -32,7 +31,7 @@
                     <div class="about_ttls">
 
                         <h3>What's in these terms?</h3>
-                        <p>hese terms tell you the rules for using our website <span class="span_bold">(our
+                        <p>These terms tell you the rules for using our website <span class="span_bold">(our
                                 site).</span></p>
 
                         <p>Click on the links below to go straight to more information on each area:</p>
@@ -81,9 +80,6 @@
                     <div class="term_content_box">
                         <div class="app_tems_bx">
                             <h3><a name=acceptterms>By using our site, you accept these terms</a></h3>
-                            <p><span class="spam_bold_anchor"><a href="#"><i>www.agilis.dating</i></a></span> is a site
-                                operated by Agilis Dating Ltd. ("We"). We are registered in England and Wales under
-                                company number 14923748.</p>
                             <p>By using our site, you confirm that you accept these terms of use and that you agree to
                                 comply with them.</p>
                             <p>If you do not agree to these terms, you must not use our site.</p>
@@ -99,9 +95,7 @@
                             <p>These terms of use refer to the following additional terms, which also apply to your use
                                 of our site:</p>
                             <ul>
-                                <li>Our <span class="span_blue_italic"><a href="privacy-policy1.html">Privacy Policy.</a></span> See
-                                    further under <span class="span_blue_italic"><a href="#">How we may use your
-                                            personal information.</a></span></li>
+                                <li>Our <span class="span_blue_italic"><a href="privacy-policy.html">Privacy Policy.</a></span> See further under <span class="span_blue_italic"><a href="#"> How we may use your personal information.</a></span></li>
                                 <li>Our <span class="span_blue_italic"><a href="acceptable-use-policy.html">Acceptable Use Policy,</a></span>
                                     which sets out the permitted uses and prohibited uses of our site. When using our
                                     site, you must comply with this Acceptable Use Policy.</li>
@@ -150,8 +144,7 @@
                     <div class="term_content_box">
                         <div class="app_tems_bx">
                             <h3><a name=transferagreement>We may transfer this agreement to someone else</a></h3>
-                            <p>We may update and change our site from time to time to reflect changes to our products,
-                                our users' needs and our business priorities.</p>
+                            <p>We may transfer our rights and obligations under these terms to another organisation. We will always tell you in writing if this happens and we will ensure that the transfer will not affect your rights under the contract.</p>
                         </div>
                     </div>
 
@@ -230,6 +223,7 @@
                         <div class="app_tems_bx">
                             <h3><a name=complainreport>How to complain about or report content</a></h3>
                             <p>If you become aware of any material that could comprise or be connected to child sexual abuse or exploitation or that could comprise terrorist content or be connected to terrorism, please contact us by email to: <span class="spam_bold_anchor"><a href="#"><i>help@agilis.dating</i></a></span></p>
+                            <p>If you wish to complain about any other content, please contact us too.</p>
                         </div>
                     </div>
 
@@ -242,13 +236,13 @@
                                 <li>Different limitations and exclusions of liability will apply to liability arising as a result of the supply of any products to you, which will be set out in our Terms and conditions for Customers.</li>
 
                             </ul>
-                            <p><span class="span_bold">If you are a business user</span></p>
+                            <p><span class="span_bold">If you are a business user</span>:</p>
                             <p>We exclude all implied conditions, warranties, representations or other terms that may apply to our site or any content on it.</p>
                             <p>We will not be liable to you for any loss or damage, whether in contract, tort (including negligence), breach of statutory duty, or otherwise, even if foreseeable, arising under or in connection with:</p>
 
                             <ul>
                                 <li>use of, or inability to use, our site; or</li>
-                                <li>use of or reliance on any content displayed on our site</li>
+                                <li>use of or reliance on any content displayed on our site.</li>
                             </ul>
                             <p>In particular, we will not be liable for:</p>
 
@@ -272,17 +266,17 @@
 
                      <div class="term_content_box">
                         <div class="app_tems_bx">
-                            <h3><a name=personalinformation>How we may use your personal informationt</a></h3>
-                            <p>We will only use your personal information as set out in our <span class="span_blue_italic"><a href="privacy-policy1.html"><i>Privacy Policy.</i></a></span></p>
+                            <h3><a name=personalinformation>How we may use your personal information</a></h3>
+                            <p>We will only use your personal information as set out in our <span class="span_blue_italic"><a href="privacy-policy.html"><i>Privacy Policy.</i></a></span></p>
                         </div>
                     </div>
 
                     <div class="term_content_box">
                         <div class="app_tems_bx">
                             <h3><a name=Uploadingcontent>Uploading content to our site</a></h3>
-                            <p>Whenever you make use of a feature that allows you to upload content to our site, or to make contact with other users of our site, you must comply with the content standards set out in our<span class="span_blue_italic"><a href="acceptable-use-policy.html"><i>Acceptable Use Policy.</i></a></span></p>
+                            <p>Whenever you make use of a feature that allows you to upload content to our site, or to make contact with other users of our site, you must comply with the content standards set out in our <span class="span_blue_italic"><a href="acceptable-use-policy.html"><i>Acceptable Use Policy.</i></a></span></p>
                             <p>You warrant that any such contribution does comply with those standards, and you will be liable to us and indemnify us for any breach of that warranty. This means you will be responsible for any loss or damage we suffer as a result of your breach of warranty.</p>
-                            <p>Any content you upload to our site will be considered non-confidential and non-proprietary. You retain all of your ownership rights in your content, but you are required to grant us a limited licence to use, store and copy that content and to distribute and make it available to third parties. The rights you license to us are described in <span class="span_blue_italic"><a href="#givingmaterial"><i>Rights you are giving us to use material you upload</i></a></span></p>
+                            <p>Any content you upload to our site will be considered non-confidential and non-proprietary. You retain all of your ownership rights in your content, but you are required to grant us a limited licence to use, store and copy that content and to distribute and make it available to third parties. The rights you license to us are described in <span class="span_blue_italic"><a href="#givingmaterial"><i>Rights you are giving us to use material you upload.</i></a></span></p>
                             <p>We also have the right to disclose your identity to any third party who is claiming that any content posted or uploaded by you to our site constitutes a violation of their intellectual property rights or of their right to privacy.</p>
                             <p>We have the right to remove any posting you make on our site if, in our opinion, your post does not comply with the content standards set out in our <span class="span_blue_italic"><a href="acceptable-use-policy.html"><i>Acceptable Use Policy.</i></a></span></p>
                             <p>If you wish to contact us in relation to content you have uploaded to our site and that we have taken down, please contact here.</p>
@@ -338,7 +332,7 @@
 
                     <div class="term_content_box">
                         <div class="app_tems_bx">
-                            <h3><a name=trademarksregistered>Which country's laws apply to any disputes?</a></h3>
+                            <h3><a name=trademarksregistered>Our trademarks are registered</a></h3>
                                 <p>“Agilis” and the company logo are registered trademarks of Agilis Dating Ltd. You are not permitted to use them without our approval, unless they are part of material you are using as permitted under <span class="span_blue_italic"><a href="#materialsite"><i>How you may use material on our site.</i></a></span></p>
 
                         </div>
@@ -353,7 +347,7 @@
     </section>
     <!-- Term And Constion Section End -->
     <!-- Footer Section CSS Start -->
-   @include('en-au.includes.footer2')
+   @include('en-au.includes.footer')
     <!-- Footer Section CSS End -->
 </body>
 

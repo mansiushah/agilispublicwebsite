@@ -6,8 +6,8 @@
 <body>
     <!-- Header Section Start -->
       @include('en-gb.includes.header')
-    <!-- Header Section End -->
-            <section class="term_condition_banner">
+         <!-- Landing Banner Section Start -->
+    <section class="term_condition_banner">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -19,7 +19,7 @@
     <!-- Landing Banner Section End -->
 
     <!-- Term And Constion Section Start -->
-  <section class="about-us_sections">
+    <section class="about-us_sections">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 p-4">
@@ -35,23 +35,11 @@
                                 <li>Agilis mobile application dating software (App) and any updates or supplements to
                                     it.</li>
                                 <li>The related electronic documentation (Documentation).</li>
-                                <li>The related electronic documentation (Documentation).</li>
                                 <li>The service you connect to via the App and the content we provide to you through it
                                     <b>(Service).</b>
                                 </li>
                             </ul>
                             <p>as permitted in these terms.</p>
-                        </div>
-
-                        <div class="app_tems_bx">
-                            <h3>Your privacy</h3>
-                            <p>Under data protection legislation, we are required to provide you with certain
-                                information including who we are, how we process your personal data and for what
-                                purposes and your rights in relation to your personal data and how to exercise them.
-                                This information is provided in <span class="span_italic">Privacy Policy</span> and it
-                                is important that you read that
-                                information.</p>
-
                         </div>
 
 
@@ -72,7 +60,7 @@
                                 and Google's rules and policies, and Apple Media Services and Google Play rules and
                                 policies
                                 (Google: <span class="span_italic"><a href="#">Google Play Terms of Service</a></span>,
-                                Apple: <span class="span_italic"><a href="#">Apple Media Services</a></span> ) will
+                                Apple: <span class="span_italic"><a href="#">Apple Media Services</a></span>) will
                                 apply instead
                                 of these terms where there are differences between the two.</p>
                         </div>
@@ -106,7 +94,7 @@
 
                         <div class="app_tems_bx">
                             <h3>You must be 18 to accept these terms and buy the app</h3>
-                            <p>In return for your agreeing to comply with these terms you may:</p>
+                            <p>You must be 18 or over to accept these terms and buy the App.  By accessing the App you represent and warrant that you are of legal age to form a binding contract with Agilis.</p>
                         </div>
 
                         <div class="app_tems_bx">
@@ -137,8 +125,7 @@
                                 performance, enhance functionality, reflect changes to the operating system or address
                                 security issues. Alternatively, we may ask you to update the App for these reasons.</p>
 
-                            <p>We will give you at least 30 days’ notice of any change by sending you an SMS with
-                                details of the change or notifying you of a change when you next start the App.</p>
+                            <p>If you choose not to install such updates or if you opt out of automatic updates, you may not be able to continue using the App and the Services.</p>
 
                             <p>The App will always match the description of it provided to you when you bought it.</p>
                         </div>
@@ -153,9 +140,7 @@
 
                         <div class="app_tems_bx">
                             <h3>User Account</h3>
-                            <p>If you download or stream the App onto any phone or other device not owned by you, you
-                                must have the owner's permission to do so. You will be responsible for complying with
-                                these terms, whether or not you own the phone or other device.</p>
+                            <p>You must create a user account to access certain features of the App.  You agree to provide accurate and complete information when creating your account. </p>
 
                             <p>You are solely responsible for maintaining the confidentiality of your account
                                 information and for any activities under your account.</p>
@@ -237,7 +222,7 @@
                                 <li>not use the App or any Service in any unlawful manner, for any unlawful purpose, or
                                     in any manner inconsistent with these terms, or act fraudulently or maliciously, for
                                     example, by hacking into or inserting malicious code, such as viruses, or harmful
-                                    data, into the App, any Service or any operating system</li>
+                                    data, into the App, any Service or any operating system;</li>
                                 <li>not infringe our intellectual property rights or those of any third party in
                                     relation to your use of the App or any Service including by the submission of any
                                     material (to the extent that such use is not licensed by these terms);</li>
@@ -309,7 +294,7 @@
                             <ul>
                                 <li>You must stop all activities authorised by these terms, including your use of the App and any Services.</li>
 
-                                <li>You must delete or remove the App from all devices in your possession and immediately destroy all copies of the App which you have and confirm to us that you have done this</li>
+                                <li>You must delete or remove the App from all devices in your possession and immediately destroy all copies of the App which you have and confirm to us that you have done this.</li>
 
                                 <li>We may remotely access your devices and remove the App from them and cease providing you with access to the Services.</li>
                             </ul>
@@ -326,13 +311,13 @@
                         </div>
 
                         <div class="app_tems_bx">
-                            <h3>You need our consent to transfer your rights to someone else</h3>
+                            <h3>No rights for third parties</h3>
                             <p>This agreement does not give rise to any rights under the Contracts (Rights of Third Parties) Act 1999 to enforce any term of this agreement.</p>
                         </div>
 
                         <div class="app_tems_bx">
                             <h3>If a court finds part of this contract illegal, the rest will continue in force</h3>
-                            <p>Each of the paragraphs of these terms operates separately. If any court or relevant authority decides that any of them are unlawful, the remaining paragraphs will remain in full force and effect</p>
+                            <p>Each of the paragraphs of these terms operates separately. If any court or relevant authority decides that any of them are unlawful, the remaining paragraphs will remain in full force and effect.</p>
                         </div>
 
                         <div class="app_tems_bx">
@@ -353,9 +338,8 @@
 
         </div>
     </section>
-    <!-- Term And Constion Section End -->
-    <!-- Footer Section CSS Start -->
-   @include('en-gb.includes.footer2')
+    <!-- Term And Constion Section Start -->
+      @include('en-gb.includes.footer')
     <!-- Footer Section CSS End -->
 </body>
 
