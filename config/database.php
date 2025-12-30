@@ -62,6 +62,16 @@ return [
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
         ],
+         'mysql_second' => [
+                'driver' => 'mysql',
+                'host' => env('DB_SECOND_HOST'),
+                'port' => env('DB_SECOND_PORT'),
+                'database' => env('DB_SECOND_DATABASE'),
+                'username' => env('DB_SECOND_USERNAME'),
+                'password' => env('DB_SECOND_PASSWORD'),
+                'charset' => 'utf8mb4',
+                'collation' => 'utf8mb4_unicode_ci',
+            ],
         'mysql_system' => [   // 👈 add this for mysql system tables
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),

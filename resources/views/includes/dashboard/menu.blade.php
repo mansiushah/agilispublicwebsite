@@ -35,7 +35,7 @@
                 </div>
                 <span>Profile</span>
             </a>
-
+            @if(is_null($user->adportal_user_id))
             <a href="{{ locale_route('registerorg')}}" class="dashboard_menu_item {{ Route::is('registerorg') ? 'dashboard_active' : '' }}">
                 <div class="dashboard_menu_item_img">
                     <img src="{{ url('public/assets/img/register-organization.svg')}}"
@@ -43,7 +43,15 @@
                 </div>
                 <span>Register organisation</span>
             </a>
-
+            @else
+            <a href="{{ locale_route('registerorg')}}" class="dashboard_menu_item {{ Route::is('registerorg') ? 'dashboard_active' : '' }}">
+                <div class="dashboard_menu_item_img">
+                    <img src="{{ url('public/assets/img/register-organization.svg')}}"
+                        alt="register-organization">
+                </div>
+                <span>Register Status</span>
+            </a>
+            @endif
             <a href="{{ locale_route('knowledgebase')}}" class="dashboard_menu_item {{ Route::is('knowledgebase') ? 'dashboard_active' : '' }}">
                 <div class="dashboard_menu_item_img">
                     <img src="{{ url('public/assets/img/knowledgebase.svg')}}" alt="knowledgebase">

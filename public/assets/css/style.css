@@ -2297,3 +2297,79 @@ button.bottom-chats_btn {
     list-style-type: disc;
 }
 /* App Term Condition Page CSS End */
+
+.login_top .card-alert.card.red {
+    background: #F33939;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.login_top .alert.alert-danger.text-center {
+    padding: 8px;
+    color: #fff;
+    font-weight: 500;
+    background: #F33939;
+}
+.card-alert.card.green{
+    background: green;
+    color: #ffff;
+    height: 40px;
+    line-height: 0;
+    padding: 0 0 0 10px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    bottom: 13px;
+    display: block;
+}
+.card-alert.card.red {
+    background: red;
+    color: #ffff;
+    height: 40px;
+    line-height: 0;
+    padding: 0 0 0 10px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    bottom: -12px;
+    display: block;
+}
+.card-alert.card.orange{
+    background: red;
+    color: #ffff;
+    height: 40px;
+    line-height: 0;
+    padding: 0 0 0 10px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    bottom: 13px;
+    display: block;
+}
+.card-alert.card.red p {
+    line-height: 40px;
+    color: #fff;
+}
+.card-alert.card.green .card-content.white-text p {
+    color: #ffff;
+    font-weight: 500;
+    line-height: 40px;
+    padding: 0;
+    font-size: 16px;
+}
+.card-alert.card.green .card-content.white-text p{
+    color: #ffff;
+    font-weight: 500;
+    line-height: 40px;
+    padding: 0;
+    font-size: 16px;
+}
+.card-alert.card.orange .card-content.white-text p{
+      color: #ffff;
+    font-weight: 500;
+    line-height: 40px;
+    padding: 0;
+    font-size: 16px;
+}
+.manage_user_main_card .card-alert.card.green {
+    bottom: 5px;
+}

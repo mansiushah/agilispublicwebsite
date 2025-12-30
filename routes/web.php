@@ -5,7 +5,9 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\{DashboardController};
 use Illuminate\Http\Request;
 use App\Http\Controllers\PageController;
-
+Route::get('/get-tax-registrations/{country_code}', [DashboardController::class, 'getTaxRegistrations'])->name('txtcheck');
+Route::get('/get-currencies/{country_code}', [DashboardController::class, 'getCurrencies'])->name('get.currencies');
+Route::post('organisations-store', [DashboardController::class, 'storeOrganisation'])->name('organisations.store');
 // 🔹 Add locale pattern at top
 Route::pattern('locale', 'en-au|en-ca|en-gb|en-us');
 Route::get('api-doc',function () { return view('api-doc')->with('title', 'Api Doc');});
@@ -91,6 +93,8 @@ Route::middleware('auth')->prefix('dashboard')->group(function () {
     Route::get('/knowledgebase', [DashboardController::class, 'knowledgebase'])->name('knowledgebase');
     Route::get('/change-password', [DashboardController::class, 'changePassword'])->name('change-password');
     Route::post('/change-password-update', [DashboardController::class, 'UpdatechangePassword'])->name('update.changepassword');
+     Route::get('/logout', [LoginController::class, 'logout'])
+        ->name('logout');
 });
 // 🌍 Locale-based dashboard
 Route::group([
@@ -118,13 +122,13 @@ Route::group([
 
     Route::post('/change-password-update', [DashboardController::class, 'UpdatechangePassword'])
         ->name('locale.update.changepassword');
-    Route::post('/logout', [LoginController::class, 'logout'])
+    Route::get('/logout', [LoginController::class, 'logout'])
         ->name('locale.logout');
 });
 
 
 // ✅ Logout Route
-Route::get('/logout', [LoginController::class, 'logout'])->name('logout')->middleware('auth');
+//Route::get('/logout', [LoginController::class, 'logout'])->name('logout')->middleware('auth');
 
 
 

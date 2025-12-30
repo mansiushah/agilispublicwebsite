@@ -28,8 +28,6 @@
     // Clean path (example: "dashboard" or "dashboard/profile")
     $cleanPath = ltrim($uri, '/');
 @endphp
-
-
 <header class="header">
     <div class="container">
         <nav class="navbar navbar-expand-md">
