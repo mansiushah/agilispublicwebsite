@@ -20,11 +20,7 @@
     <section class="login_bx_section">
         <div class="container">
             <div class="login_box">
-                @if(session('error'))
-                    <div class="alert alert-danger text-center">
-                        {{ session('error') }}
-                    </div>
-                @endif
+                @include('flash-message')
                 <form action="{{ locale_route('login.submit') }}" method="POST">
                     @csrf
                     <h2>Log In</h2>
@@ -38,7 +34,7 @@
                     <div class="form-group position-relative">
                         <div class="form_password">
                             <label>Password</label>
-                            <a href="{{ url('forgot')}}">Forgot your password?</a>
+                            <a href="{{ locale_route('forgot')}}">Forgot your password?</a>
                         </div>
                         <input type="password" class="form-control" placeholder="******" name="password">
                         @error('password')
@@ -50,7 +46,7 @@
                         <button type="submit" class="btn btn-primary login_btn">LogIn</button>
                     </div>
                     <div class="login_create_bx pt-3">
-                        <p>Already have an account? <a href="{{url('register')}}">Create an Account</a></p>
+                        <p>Already have an account? <a href="{{locale_route('register')}}">Create an Account</a></p>
                     </div>
                 </form>
             </div>

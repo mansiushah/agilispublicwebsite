@@ -33,8 +33,6 @@
         $cleanPath = ''; // Reset to empty
     }
 @endphp
-
-
 <header class="header">
     <div class="container">
         <nav class="navbar navbar-expand-md">
@@ -69,7 +67,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link landing_login_btn" href="{{ url('login') }}">LOGIN</a>
+                        <a class="nav-link landing_login_btn" href="{{ locale_route('login') }}">LOGIN</a>
                     </li>
 
                     <!-- COUNTRY DROPDOWN -->

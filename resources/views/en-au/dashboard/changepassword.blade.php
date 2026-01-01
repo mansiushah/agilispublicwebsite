@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-@include('includes.dashboard.head')
+@include('en-au.includes.dashboard.head')
 <body>
 <!-- Header Section Start -->
-@include('includes.dashboard.header')
+@include('en-au.includes.dashboard.header')
 <!-- Header Section End -->
 <!-- Landing Banner Section Start -->
 <section class="landing_banner_section dashboard_banner_section">
@@ -79,10 +79,10 @@
     </div>
  </section>
 <!-- Footer Section CSS Start -->
-    @include('includes.dashboard.footer')
+    @include('en-au.includes.dashboard.footer')
 <!-- Footer Section CSS End -->
 </body>
-@include('includes.dashboard.script')
+@include('en-au.includes.dashboard.script')
 </html>
 
 

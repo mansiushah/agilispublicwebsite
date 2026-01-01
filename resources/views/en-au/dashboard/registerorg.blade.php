@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-@include('includes.dashboard.head')
+@include('en-au.includes.dashboard.head')
 <body>
 <!-- Header Section Start -->
-@include('includes.dashboard.header')
+@include('en-au.includes.dashboard.header')
 <!-- Header Section End -->
 <!-- Landing Banner Section Start -->
 <section class="landing_banner_section dashboard_banner_section">
@@ -18,7 +18,7 @@
     <div class="container">
         <div class="dashboard_section_main">
             <div class="dashboard_section_row">
-                @include('includes.dashboard.menu')
+                @include('en-au.includes.dashboard.menu')
                 <div class="dashboard_section_row_rht">
                         <div class="tab-content dashboad_right_penal" id="v-pills-tabContent">
 
@@ -94,10 +94,10 @@
     </div>
  </section>
 <!-- Footer Section CSS Start -->
-    @include('includes.dashboard.footer')
+    @include('en-au.includes.dashboard.footer')
 <!-- Footer Section CSS End -->
 </body>
-@include('includes.dashboard.script')
+@include('en-au.includes.dashboard.script')
 </html>
 <!-- <div class="container mt-5">
     <div class="card shadow p-4">

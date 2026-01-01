@@ -21,17 +21,25 @@
     <section class="login_bx_section">
         <div class="container">
             <div class="login_box">
-                <form>
+                <form method="POST" action="{{ locale_route('password.update') }}">
+                    @csrf
+                    @include('flash-message')
                     <h2>Set Password</h2>
                     <div class="form-group position-relative">
                         <label>Password</label>
-                        <input type="password" class="form-control" placeholder="******">
+                        <input type="password" class="form-control" placeholder="******" name="password">
                         <a href="#" toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></a>
+                        @error('password')
+                            <small class="text-danger">{{ $message }}</small>
+                        @enderror
                     </div>
                     <div class="form-group position-relative">
                         <label>Confirm Password</label>
-                        <input type="password" class="form-control" placeholder="******">
+                        <input type="password" class="form-control" placeholder="******" name="password_confirmation">
                         <a href="#" toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></a>
+                         @error('password_confirmation')
+                            <small class="text-danger">{{ $message }}</small>
+                        @enderror
                     </div>
                     <div class="text-center">
                         <button type="submit" class="btn btn-primary login_btn">Reset</button>

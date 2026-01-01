@@ -94,11 +94,9 @@
                                             <img src="{{ url('public/assets/img/' . $info['flag']) }}" class="img-fluid">
                                             <span>{{ $info['label'] }}</span>
                                         </a>
-
                                     @endforeach
                                 </div>
                                 </div>
-
                             </div>
                         </li>
                     </ul>

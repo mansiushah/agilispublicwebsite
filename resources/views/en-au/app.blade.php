@@ -341,7 +341,7 @@
     <!-- Term And Constion Section Start -->
     <!-- Term And Constion Section End -->
     <!-- Footer Section CSS Start -->
-   @include('en-au.includes.footer2')
+   @include('en-au.includes.footer')
     <!-- Footer Section CSS End -->
 </body>
 

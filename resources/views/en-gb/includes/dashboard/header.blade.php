@@ -56,11 +56,11 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ad Portal</a>
+                        <a class="nav-link" href="https://chessmafia.com/php/M-0402/Ad-Agilis/Ad-agilis">Ad Portal</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">API DOCS</a>
+                        <a class="nav-link" href="{{url('api-doc')}}">API DOCS</a>
                     </li>
 
                     <!-- COUNTRY DROPDOWN -->

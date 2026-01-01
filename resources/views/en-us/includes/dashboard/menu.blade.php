@@ -10,7 +10,7 @@
                 <span>Home</span>
             </a>
 
-            <a href="{{ route('profile')}}" class="dashboard_menu_item {{ Route::is('profile') ? 'dashboard_active' : '' }}">
+            <a href="{{ route('profile')}}" class="dashboard_menu_item {{ request()->segment(3) == 'profile' ? 'dashboard_active' : '' }}">
                 <div class="dashboard_menu_item_img">
                     <img src="{{ url('public/assets/img/profile.svg')}}" alt="profile" class="img-fluid">
                 </div>

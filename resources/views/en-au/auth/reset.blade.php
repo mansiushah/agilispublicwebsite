@@ -21,11 +21,16 @@
     <section class="login_bx_section">
         <div class="container">
             <div class="login_box">
-                <form>
+                <form method="POST" action="{{ locale_route('password.email') }}">
+                      @csrf
+                    @include('flash-message')
                     <h2>Reset your password</h2>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" placeholder="Type here...">
+                        <input type="email" class="form-control" placeholder="Type here..." name="email">
+                        @error('email')
+                            <small class="text-danger">{{ $message }}</small>
+                        @enderror
                     </div>
                     <div class="text-center">
                         <button type="submit" class="btn btn-primary login_btn">Send</button>

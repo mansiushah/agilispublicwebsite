@@ -21,12 +21,8 @@
     <section class="login_bx_section">
         <div class="container">
             <div class="login_box">
-                @if(session('error'))
-                    <div class="alert alert-danger text-center">
-                        {{ session('error') }}
-                    </div>
-                @endif
-                <form action="{{ route('verify.otp.submit') }}" method="POST" id="otpForm">
+                @include('flash-message')
+                <form action="{{ locale_route('verify.otp.submit') }}" method="POST" id="otpForm">
                     @csrf
                     <input type="hidden" name="email" class="form-control" value="{{ $email ?? '' }}">
                     <input type="hidden" name="otp" id="otp"> <!-- final OTP value -->

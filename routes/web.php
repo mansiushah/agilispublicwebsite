@@ -15,7 +15,13 @@ Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('login', [LoginController::class, 'login'])->name('login.submit');
 Route::get('register', [LoginController::class, 'showRegisterForm'])->name('register');
 Route::post('register', [LoginController::class, 'storeUser'])->name('register.submit');
+Route::get('forgot', [LoginController::class, 'showForgotForm'])->name('forgot');
+Route::post('forgot-password', [LoginController::class, 'sendOtpForgot'])->name('password.email');
+Route::get('verify-otp-forgot', [LoginController::class, 'showVerifyOtpForgot'])->name('verify.otp.form.forgot');
+Route::post('verify-otp-forgot', [LoginController::class, 'verifyOtpForgot'])->name('verify.otp.submit.forgot');
 
+Route::get('reset-password', [LoginController::class, 'showResetForm'])->name('password.reset');
+Route::post('reset-password', [LoginController::class, 'resetPassword'])->name('password.update');
 
 // 👉 Language-based routes: en-au, en-ca, en-gb, en-us etc.
 Route::group(['prefix' => '{locale}'], function () {
@@ -30,10 +36,18 @@ Route::group(['prefix' => '{locale}'], function () {
     Route::post('register', [LoginController::class, 'storeUser'])
         ->name('locale.register.submit');
 
+    Route::get('forgot', [LoginController::class, 'showForgotForm'])->name('locale.forgot');
+    Route::post('forgot-password', [LoginController::class, 'sendOtpForgot'])->name('locale.password.email');
+    Route::get('verify-otp-forgot', [LoginController::class, 'showVerifyOtpForgot'])->name('locale.verify.otp.form.forgot');
+    Route::post('verify-otp-forgot', [LoginController::class, 'verifyOtpForgot'])->name('locale.verify.otp.submit.forgot');
+
+    Route::get('reset-password', [LoginController::class, 'showResetForm'])->name('locale.password.reset');
+    Route::post('reset-password', [LoginController::class, 'resetPassword'])->name('locale.password.update');
 });
 
 
-Route::get('forgot', [LoginController::class, 'showLoginForm'])->name('forgot');
+
+
 Route::get('resend-otp/{email}', [LoginController::class, 'ResendOTP'])->name('resend-otp');
 Route::get('verify-otp', [LoginController::class, 'showVerifyOtp'])->name('verify.otp.form');
 Route::post('verify-otp', [LoginController::class, 'verifyOtp'])->name('verify.otp.submit');
@@ -48,7 +62,7 @@ Route::get('/cookie-policy',[PageController::class, 'cookiePolicyUseDefault'])->
 Route::get('/acceptable-use-policy',[PageController::class, 'acceptableUseDefault'])->name('acceptable.use.policy');
 Route::get('/about-us',[PageController::class, 'aboutusUseDefault'])->name('about.us');
 Route::get('/offers',[PageController::class, 'offersUseDefault'])->name('offer');
-Route::get('morden-slavery',[PageController::class, 'mordenSlaveryUseDefault'])->name('morden-slavery');
+Route::get('slavery',[PageController::class, 'mordenSlaveryUseDefault'])->name('morden-slavery');
 
 // Region based
 Route::get('/{locale}', [PageController::class, 'homeWithLocale']);
@@ -58,7 +72,7 @@ Route::get('{locale}/privacy-policy', [PageController::class, 'privacyPolicy'])
 Route::get('{locale}/terms-and-conditions', [PageController::class, 'termsAndConditions'])
      ->where('locale', 'en-au|en-ca|en-gb|en-us')
      ->name('locale.terms.and.conditions');
-Route::get('{locale}/app-terms-and-conditions', [PageController::class, 'ApptermsAndConditions'])
+Route::get('{locale}/app-terms', [PageController::class, 'ApptermsAndConditions'])
      ->where('locale', 'en-au|en-ca|en-gb|en-us')
      ->name('locale.app.terms.and.conditions');
 Route::get('{locale}/cookie-policy', [PageController::class, 'cookiePolicy'])
@@ -73,7 +87,7 @@ Route::get('{locale}/about-us', [PageController::class, 'aboutUs'])
 Route::get('{locale}/offers', [PageController::class, 'offers'])
      ->where('locale', 'en-au|en-ca|en-gb|en-us')
      ->name('locale.offers');
-Route::get('{locale}/morden-slavery', [PageController::class, 'mordenSlavery'])
+Route::get('{locale}/slavery', [PageController::class, 'mordenSlavery'])
      ->where('locale', 'en-au|en-ca|en-gb|en-us')
      ->name('locale.morden-slavery');
 
@@ -89,7 +103,7 @@ Route::middleware('auth')->prefix('dashboard')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/profile', [DashboardController::class, 'profile'])->name('profile');
     Route::post('/profile', [DashboardController::class, 'profileUpdate'])->name('update.profile');
-    Route::get('/registerorg', [DashboardController::class, 'registerorg'])->name('registerorg');
+    Route::get('/register-organisation', [DashboardController::class, 'registerorg'])->name('registerorg');
     Route::get('/knowledgebase', [DashboardController::class, 'knowledgebase'])->name('knowledgebase');
     Route::get('/change-password', [DashboardController::class, 'changePassword'])->name('change-password');
     Route::post('/change-password-update', [DashboardController::class, 'UpdatechangePassword'])->name('update.changepassword');
@@ -111,7 +125,7 @@ Route::group([
     Route::post('/profile', [DashboardController::class, 'profileUpdate'])
         ->name('locale.update.profile');
 
-    Route::get('/registerorg', [DashboardController::class, 'registerorg'])
+    Route::get('/register-organisation', [DashboardController::class, 'registerorg'])
         ->name('locale.registerorg');
 
     Route::get('/knowledgebase', [DashboardController::class, 'knowledgebase'])
@@ -122,6 +136,7 @@ Route::group([
 
     Route::post('/change-password-update', [DashboardController::class, 'UpdatechangePassword'])
         ->name('locale.update.changepassword');
+
     Route::get('/logout', [LoginController::class, 'logout'])
         ->name('locale.logout');
 });

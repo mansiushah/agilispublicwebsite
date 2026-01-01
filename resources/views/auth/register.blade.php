@@ -21,7 +21,7 @@
     <section class="login_bx_section">
         <div class="container">
             <div class="login_box">
-                <form action="{{route('register.submit')}}" method="post">
+                <form action="{{ locale_route('register.submit')}}" method="post">
                       @csrf
                     <h2>Create Account</h2>
                     <div class="form-group position-relative">

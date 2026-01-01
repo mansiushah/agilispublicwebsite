@@ -20,11 +20,7 @@
     <section class="login_bx_section">
         <div class="container">
             <div class="login_box">
-                @if(session('error'))
-                    <div class="alert alert-danger text-center">
-                        {{ session('error') }}
-                    </div>
-                @endif
+                @include('flash-message')
                 <form action="{{ locale_route('login.submit') }}" method="POST">
                     @csrf
                     <h2>Log In</h2>

@@ -1,3 +1,32 @@
+@php
+    use Illuminate\Support\Str;
+
+    // Available locales
+    $locales = [
+        'en-us' => ['label' => 'United States', 'flag' => 'UK-Flag.svg'],
+        'en-au' => ['label' => 'Australia', 'flag' => 'australia-flag.png'],
+        'en-ca' => ['label' => 'Canada', 'flag' => 'canada-flag.png'],
+        'en-gb' => ['label' => 'Great Britain', 'flag' => 'united-kingdom-flag.png'],
+    ];
+
+    // Detect current locale (fallback to en-us)
+    $currentLocale = request()->route('locale') ?? 'en-us';
+
+    // Get full path (e.g. "Ad-public-website/en-ca/dashboard")
+    $uri = request()->path();
+
+    // Remove base folder name
+    $uri = Str::after($uri, 'Ad-public-website/');
+
+    // Remove existing locale
+    foreach ($locales as $code => $info) {
+        if (Str::startsWith($uri, $code . '/')) {
+            $uri = Str::after($uri, $code . '/');
+        }
+    }
+    // Clean path (example: "dashboard" or "dashboard/profile")
+    $cleanPath = ltrim($uri, '/');
+@endphp
   <!-- Download Section Start -->
     <section id="download" class="download_section">
         <h2>Download</h2>
@@ -79,7 +108,7 @@
                                 <li><a href="{{url('/cookie-policy')}}">Cookie Policy</a></li>
                                 <li><a href="{{url('/app-terms')}}">App Terms</a></li>
                                 <li><a href="{{url('/acceptable-use-policy')}}">Acceptable Use Policy</a></li>
-                                <li><a href="{{url('/morden-slavery')}}">Modern Slavery Statement</a></li>
+                                <li><a href="{{url('/slavery')}}">Modern Slavery Statement</a></li>
                             </ul>
                         </div>
                     </div>
@@ -116,23 +145,25 @@
                     <div class="header_bottom_rht">
                         <div class="drodwn_flg">
                             <div class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"
-                                    aria-expanded="false">
-                                    <img src="{{ url('public/assets/img/UK-Flag.svg') }}" alt="UK-Flag" class="img-fluid">
-                                    <span class="pl-2">United States</span>
+                                 <!-- CURRENT SELECTED COUNTRY BUTTON -->
+                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="{{ url('public/assets/img/' . $locales[$currentLocale]['flag']) }}"
+                                         alt="flag" class="img-fluid">
+                                    <span class="pl-2">{{ $locales[$currentLocale]['label'] }}</span>
                                 </button>
-                                <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="{{ url('en-us') }}"><img src="{{ url('public/assets/img/UK-Flag.svg')}}"
-                                                alt="UK-Flag" class="img-fluid"><span>United States</span></a>
-                                        <a class="dropdown-item" href="{{ url('en-au') }}"><img src="{{ url('public/assets/img/australia-flag.png')}}"
-                                                alt="australia-flag" class="img-fluid"><span>Australia</span></a>
-                                        <a class="dropdown-item" href="{{ url('en-ca') }}"><img src="{{ url('public/assets/img/canada-flag.png')}}"
-                                                alt="canada-flag" class="img-fluid"><span>Canada</span></a>
 
-                                        <a class="dropdown-item" href="{{ url('en-gb') }}"><img src="{{ url('public/assets/img/united-kingdom-flag.png')}}"
-                                                alt="united-kingdom-flag" class="img-fluid"><span>Great
-                                                Britain</span></a>
-                                    </div>
+                                <!-- DROPDOWN MENU -->
+                                <div class="dropdown-menu">
+                                    @foreach($locales as $code => $info)
+
+                                        <a class="dropdown-item {{ $currentLocale == $code ? 'active' : '' }}"
+                                           href="{{ url($code . '/' . $cleanPath) }}">
+                                            <img src="{{ url('public/assets/img/' . $info['flag']) }}" class="img-fluid">
+                                            <span>{{ $info['label'] }}</span>
+                                        </a>
+
+                                    @endforeach
+                                </div>
                             </div>
                         </div>
                     </div>

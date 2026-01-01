@@ -41,7 +41,7 @@ class DashboardController extends Controller
         $user = Auth::user();
         $countries = Countries::get();
         $userDetails = UserAdPortal::where('id',$user->adportal_user_id)->first();
-       // $status = 1;
+        $status = 0;
         if($userDetails)
         {
         $organisationDetails = Organisation::where('id',$userDetails->organisation_id)->first();
@@ -85,7 +85,7 @@ class DashboardController extends Controller
          // Validate input
         $request->validate([
             'old_password'      => 'required',
-            'new_password===]['      => 'required|min:6',
+            'new_password'      => 'required|min:6',
             'confirm_password'  => 'required|same:new_password',
         ]);
 

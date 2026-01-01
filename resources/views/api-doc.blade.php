@@ -1028,5 +1028,37 @@ $response = curl_exec($ch);
         blurOverlay.style.display = 'none';
     });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
 
+// Map button IDs → section IDs
+const scrollMap = {
+    createOfferBtn: "createOfferSectionid",
+    createOfferBtn1: "editOfferSectionid",
+    createOfferBtn2: "viewOfferSectionid",
+    createOfferBtn3: "pauseResumeOfferSectionid",
+    createOfferBtn4: "deleteOfferSectionid"
+};
+// Loop through all buttons
+Object.keys(scrollMap).forEach(btnId => {
+    const btn = document.getElementById(btnId);
+
+    if (btn) {
+        btn.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const targetId = scrollMap[btnId];
+            const target = document.getElementById(targetId);
+
+            if (target) {
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }
+        });
+    }
+});
+});
+</script>
 </html>

@@ -339,7 +339,7 @@
         </div>
     </section>
     <!-- Term And Constion Section Start -->
-    @include('includes.footer2')
+    @include('includes.footer')
     <!-- Footer Section CSS End -->
 </body>
 

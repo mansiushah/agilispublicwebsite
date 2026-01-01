@@ -131,7 +131,7 @@
                                 ending 5th
                                 April <br>
                                 2024. It was approved by the board on 01/08/2023. </p>
-                            <img src="assets/img/signature.png">
+                              <img src="{{url('public/assets/img/signature.png')}}">
                             <p>Jehan Rajendra</p>
                             <p>Agilis Dating Ltd</p>
                             <p> Date: 01/08/2023</p>

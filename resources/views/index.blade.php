@@ -122,6 +122,47 @@
     </div>
     <!-- Tosat Meeeage End -->
 </body>
-@include('includes.script')
 
+@include('includes.script')
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+      function setActive(link) {
+        navLinks.forEach(l => l.parentElement.classList.remove("active"));
+        link.parentElement.classList.add("active");
+      }
+
+      // CLICK HANDLER
+      navLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+          const href = this.getAttribute("href");
+
+          // If link is for same-page section
+          if (href.startsWith("#")) {
+            e.preventDefault();
+
+            const targetSection = document.querySelector(href);
+            if (targetSection) {
+              targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+
+            setActive(this);
+            history.replaceState(null, null, href); // updates URL hash without reload
+          } else {
+            // another page → active set normally
+            setActive(this);
+          }
+        });
+      });
+
+      // ON PAGE LOAD – set active by hash
+      if (window.location.hash) {
+        const activeLink = document.querySelector(`.nav-link[href="${window.location.hash}"]`);
+        if (activeLink) {
+          setActive(activeLink);
+        }
+      }
+    });
+    </script>
 </html>
