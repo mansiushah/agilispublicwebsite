@@ -48,7 +48,7 @@
                             <h6>Company</h6>
                             <ul>
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="https://www.agilis.dating/about-us.html">About Us</a></li>
+                                <li><a href="{{ locale_route('about.us')}}">About Us</a></li>
                                 <li><a href="mailto:help@agilis.dating">Contact Us</a></li>
                             </ul>
                         </div>

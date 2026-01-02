@@ -12,7 +12,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>About-us</h2>
+                    <h2>About us</h2>
                 </div>
             </div>
         </div>
@@ -69,7 +69,6 @@
         </div>
     </section>
     <!-- Term And Constion Section Start -->
-    <!-- Term And Constion Section End -->
    @include('includes.footer')
     <!-- Footer Section CSS End -->
 </body>

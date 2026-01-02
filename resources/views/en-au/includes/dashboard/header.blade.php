@@ -3,7 +3,7 @@
 
     // Available locales
     $locales = [
-        'en-us' => ['label' => 'United States', 'flag' => 'USA-Flag.svg'],
+        'en-us' => ['label' => 'United States', 'flag' => 'UK-Flag.svg'],
         'en-au' => ['label' => 'Australia', 'flag' => 'australia-flag.png'],
         'en-ca' => ['label' => 'Canada', 'flag' => 'canada-flag.png'],
         'en-gb' => ['label' => 'Great Britain', 'flag' => 'united-kingdom-flag.png'],

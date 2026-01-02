@@ -39,7 +39,7 @@
                                             <input type="password" class="form-control"
                                                 placeholder="Enter current password" name="old_password">
                                             <a href="#" toggle="#password-field"
-                                                class="fa fa-fw fa-eye field-icon toggle-password"></a>
+                                                class="fa fa-fw fa-eye-slash field-icon toggle-password"></a>
                                             @error('old_password')
                                               <small class="text-danger">{{ $message }}</small>
                                             @enderror
@@ -50,7 +50,7 @@
                                             <input type="password" class="form-control"
                                                 placeholder="Enter new password" name="new_password">
                                             <a href="#" toggle="#password-field"
-                                                class="fa fa-fw fa-eye field-icon toggle-password"></a>
+                                                class="fa fa-fw fa-eye-slash field-icon toggle-password"></a>
                                             @error('new_password')
                                               <small class="text-danger">{{ $message }}</small>
                                             @enderror
@@ -61,7 +61,7 @@
                                             <input type="password" class="form-control"
                                                 placeholder="Confirm new password" name="confirm_password">
                                             <a href="#" toggle="#password-field"
-                                                class="fa fa-fw fa-eye field-icon toggle-password"></a>
+                                                class="fa fa-fw fa-eye-slash field-icon toggle-password"></a>
                                             @error('confirm_password')
                                               <small class="text-danger">{{ $message }}</small>
                                             @enderror

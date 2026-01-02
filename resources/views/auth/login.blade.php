@@ -40,8 +40,9 @@
                         @error('password')
                             <small class="text-danger">{{ $message }}</small>
                         @enderror
-                        <a href="#" toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></a>
+                        <a href="#" toggle="#password-field" class="fa fa-fw fa-eye-slash field-icon toggle-password"></a>
                     </div>
+
                     <div class="text-center">
                         <button type="submit" class="btn btn-primary login_btn">LogIn</button>
                     </div>

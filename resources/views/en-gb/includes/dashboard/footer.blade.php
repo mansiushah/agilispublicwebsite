@@ -42,7 +42,7 @@
                             <h6>Company</h6>
                             <ul>
                                 <li><a href="{{url('/')}}">Home</a></li>
-                                <li><a href="https://www.agilis.dating/about-us.html">About Us</a></li>
+                                <li><a href="{{ locale_route('about.us')}}">About Us</a></li>
                                 <li><a href="mailto:help@agilis.dating">Contact Us</a></li>
                             </ul>
                         </div>
@@ -52,7 +52,7 @@
                         <div class="footer_bx">
                             <h6>FOR BUSINESS</h6>
                             <ul>
-                                <li><a href="#">Offers</a></li>
+                                 <li><a href="{{ locale_route('offers') }}">Offers</a></li>
                                 <li><a href="https://chessmafia.com/php/M-0402/Ad-Agilis/Ad-agilis">Ad Portal</a></li>
                             </ul>
                         </div>
@@ -62,12 +62,12 @@
                         <div class="footer_bx">
                             <h6>Legal & Policies</h6>
                             <ul>
-                                <li><a href="{{locale_route('/terms-and-conditions')}}">Terms & Conditions</a></li>
-                                <li><a href="{{locale_route('/privacy-policy')}}">Privacy Policy</a></li>
-                                <li><a href="{{locale_route('/cookie-policy')}}">Cookie Policy</a></li>
-                                <li><a href="{{locale_route('/app-terms')}}">App Terms</a></li>
-                                <li><a href="{{locale_route('/acceptable-use-policy')}}">Acceptable Use Policy</a></li>
-                                <li><a href="{{locale_route('/slavery')}}">Modern Slavery Statement</a></li>
+                                <li><a href="{{ locale_route('terms.and.conditions')}}">Terms & Conditions</a></li>
+                                <li><a href="{{ locale_route('privacy.policy')}}">Privacy Policy</a></li>
+                                <li><a href="{{ locale_route('cookie.policy')}}">Cookie Policy</a></li>
+                                <li><a href="{{ locale_route('app.terms.and.conditions') }}">App Terms</a></li>
+                                <li><a href="{{ locale_route('acceptable-use-policy')}}">Acceptable Use Policy</a></li>
+                                <li><a href="{{ locale_route('morden-slavery')}}">Modern Slavery Statement</a></li>
                             </ul>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                         <div class="footer_bx">
                             <h6>Settings</h6>
                             <ul>
-                                <li><a href="#">Change Location</a></li>
+                                <li><a href="{{ url('choose-your-country') }}">Change Location</a></li>
                             </ul>
                         </div>
                     </div>

@@ -52,7 +52,16 @@ class PageController extends Controller
     {
         return view('about-us');
     }
+    public function aboutUs($locale)
+    {
+         $viewPath = $locale . '.about-us';
 
+        if (view()->exists($viewPath)) {
+            return view($viewPath, compact('locale'));
+        }
+
+        return view('about-us');
+    }
     public function termsAndConditions($locale)
     {
         $viewPath = $locale . '.terms-and-conditions';
@@ -112,6 +121,10 @@ class PageController extends Controller
     {
         return view('offer');
     }
+    public function chooseYourCountryDefult()
+    {
+        return view('choose-your-country');
+    }
     public function mordenSlaveryUseDefault()
     {
         return view('morden-slavery');
@@ -125,6 +138,16 @@ class PageController extends Controller
         }
 
         return view('offer');
+    }
+     public function chooseYourCountry($locale)
+    {
+        $viewPath = $locale . '.choose-your-country';
+
+        if (view()->exists($viewPath)) {
+            return view($viewPath, compact('locale'));
+        }
+
+        return view('choose-your-country');
     }
      public function mordenSlavery($locale)
     {

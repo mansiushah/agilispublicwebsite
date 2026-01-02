@@ -62,8 +62,9 @@ Route::get('/cookie-policy',[PageController::class, 'cookiePolicyUseDefault'])->
 Route::get('/acceptable-use-policy',[PageController::class, 'acceptableUseDefault'])->name('acceptable.use.policy');
 Route::get('/about-us',[PageController::class, 'aboutusUseDefault'])->name('about.us');
 Route::get('/offers',[PageController::class, 'offersUseDefault'])->name('offer');
-Route::get('slavery',[PageController::class, 'mordenSlaveryUseDefault'])->name('morden-slavery');
-
+Route::get('/slavery',[PageController::class, 'mordenSlaveryUseDefault'])->name('morden-slavery');
+Route::get('/choose-your-country',[PageController::class, 'chooseYourCountryDefult'])->name('choose-your-country');
+//Route::get('choose-your-country',function () { return view('choose-your-country')->with('title', 'Choose Your Country');});
 // Region based
 Route::get('/{locale}', [PageController::class, 'homeWithLocale']);
 Route::get('{locale}/privacy-policy', [PageController::class, 'privacyPolicy'])
@@ -90,9 +91,12 @@ Route::get('{locale}/offers', [PageController::class, 'offers'])
 Route::get('{locale}/slavery', [PageController::class, 'mordenSlavery'])
      ->where('locale', 'en-au|en-ca|en-gb|en-us')
      ->name('locale.morden-slavery');
+Route::get('{locale}/choose-your-country', [PageController::class, 'chooseYourCountry'])
+     ->where('locale', 'en-au|en-ca|en-gb|en-us')
+     ->name('locale.choose-your-country');
 
 
-Route::get('choose-your-country',function () { return view('choose-your-country')->with('title', 'Choose Your Country');});
+
 
 
 

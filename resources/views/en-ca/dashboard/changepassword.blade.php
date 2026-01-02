@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-@include('includes.dashboard.head')
+@include('en-ca.includes.dashboard.head')
 <body>
 <!-- Header Section Start -->
-@include('includes.dashboard.header')
+@include('en-ca.includes.dashboard.header')
 <!-- Header Section End -->
 <!-- Landing Banner Section Start -->
 <section class="landing_banner_section dashboard_banner_section">
@@ -18,7 +18,7 @@
     <div class="container">
         <div class="dashboard_section_main">
             <div class="dashboard_section_row">
-                @include('includes.dashboard.menu')
+                @include('en-ca.includes.dashboard.menu')
                  <div class="dashboard_section_row_rht">
                         <div class="tab-content dashboad_right_penal" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-settings-one" role="tabpanel"
@@ -39,7 +39,7 @@
                                             <input type="password" class="form-control"
                                                 placeholder="Enter current password" name="old_password">
                                             <a href="#" toggle="#password-field"
-                                                class="fa fa-fw fa-eye field-icon toggle-password"></a>
+                                                class="fa fa-fw fa-eye-slash field-icon toggle-password"></a>
                                             @error('old_password')
                                               <small class="text-danger">{{ $message }}</small>
                                             @enderror
@@ -50,7 +50,7 @@
                                             <input type="password" class="form-control"
                                                 placeholder="Enter new password" name="new_password">
                                             <a href="#" toggle="#password-field"
-                                                class="fa fa-fw fa-eye field-icon toggle-password"></a>
+                                                class="fa fa-fw fa-eye-slash field-icon toggle-password"></a>
                                             @error('new_password')
                                               <small class="text-danger">{{ $message }}</small>
                                             @enderror
@@ -61,7 +61,7 @@
                                             <input type="password" class="form-control"
                                                 placeholder="Confirm new password" name="confirm_password">
                                             <a href="#" toggle="#password-field"
-                                                class="fa fa-fw fa-eye field-icon toggle-password"></a>
+                                                class="fa fa-fw fa-eye-slash field-icon toggle-password"></a>
                                             @error('confirm_password')
                                               <small class="text-danger">{{ $message }}</small>
                                             @enderror
@@ -79,10 +79,10 @@
     </div>
  </section>
 <!-- Footer Section CSS Start -->
-    @include('includes.dashboard.footer')
+    @include('en-ca.includes.dashboard.footer')
 <!-- Footer Section CSS End -->
 </body>
-@include('includes.dashboard.script')
+@include('en-ca.includes.dashboard.script')
 </html>
 
 

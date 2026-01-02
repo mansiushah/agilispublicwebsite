@@ -604,7 +604,7 @@
                                 <li><a href="{{url('/cookie-policy')}}">Cookie Policy</a></li>
                                 <li><a href="{{url('/app-terms')}}">App Terms</a></li>
                                 <li><a href="{{url('/acceptable-use-policy')}}">Acceptable Use Policy</a></li>
-                                <li><a href="{{url('/morden-slavery')}}">Modern Slavery Statement</a></li>
+                                <li><a href="{{url('/slavery')}}">Modern Slavery Statement</a></li>
                             </ul>
                         </div>
                     </div>
@@ -613,7 +613,7 @@
                         <div class="footer_bx">
                             <h6>Settings</h6>
                             <ul>
-                                <li><a href="Choose-Your-Country.html">Change Location</a></li>
+                                <li><a href="{{url('/choose-your-country')}}">Change Location</a></li>
                             </ul>
                         </div>
                     </div>

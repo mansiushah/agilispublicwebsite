@@ -34,19 +34,20 @@
                     <div class="form-group position-relative">
                         <div class="form_password">
                             <label>Password</label>
-                            <a href="{{ url('forgot')}}">Forgot your password?</a>
+                            <a href="{{ locale_route('forgot')}}">Forgot your password?</a>
                         </div>
                         <input type="password" class="form-control" placeholder="******" name="password">
                         @error('password')
                             <small class="text-danger">{{ $message }}</small>
                         @enderror
-                        <a href="#" toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></a>
+                        <a href="#" toggle="#password-field" class="fa fa-fw fa-eye-slash field-icon toggle-password"></a>
                     </div>
+
                     <div class="text-center">
                         <button type="submit" class="btn btn-primary login_btn">LogIn</button>
                     </div>
                     <div class="login_create_bx pt-3">
-                        <p>Already have an account? <a href="{{url('register')}}">Create an Account</a></p>
+                        <p>Already have an account? <a href="{{locale_route('register')}}">Create an Account</a></p>
                     </div>
                 </form>
             </div>

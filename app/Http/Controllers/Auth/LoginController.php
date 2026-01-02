@@ -171,7 +171,7 @@ class LoginController extends Controller
     public function sendOtpForgot(Request $request)
     {
         $request->validate([
-            'email' => 'required|email|exists:users,email',
+            'email' => 'required|email|exists:users,email||email:rfc,dns',
         ]);
 
         $otp = rand(1000, 9999);
@@ -184,12 +184,20 @@ class LoginController extends Controller
        /* Mail::raw("Your verification code is: $otp", function ($msg) use ($request) {
             $msg->to($request->email)->subject('Password Reset OTP');
         });*/
-        Mail::to($request->email)->send(new \App\Mail\ResetUserPassword($user->full_name,$otp));
-        session([
+        try {
+            Mail::to($request->email)->send(new \App\Mail\ResetUserPassword($user->full_name,$otp));
+            session([
             'reset_email' => $request->email
         ]);
         return redirect()->route('verify.otp.form.forgot')->with('email', $request->email)->with('success', 'OTP sent to your email');
-       // return redirect()->route('verify.otp.form')->with('success', 'OTP sent to your email');
+        } catch (\Exception $e) {
+            if (str_contains($e->getMessage(), 'Inactive recipients')) {
+                // Mark email as invalid in DB
+                $request->session()->flash('error', 'Can not send mail on this email');
+                return back()->with(['email' => $request->email]);
+                //User::where('email', $request->email)->update(['email_status' => 'inactive']);
+            }
+        }
     }
     public function showVerifyOtpForgot(Request $request)
     {

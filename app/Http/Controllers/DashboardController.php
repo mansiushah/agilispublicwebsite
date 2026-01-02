@@ -13,15 +13,48 @@ use App\Traits\ApiResponser;
 class DashboardController extends Controller
 {
      use ApiResponser;
+     private function loadAuthView($view, $data = [])
+    {
+        $locale = request()->route('locale'); // example: en-us
+
+        // If localized view exists → load it
+        if ($locale && view()->exists("$locale/dashboard/$view")) {
+            return view("$locale/dashboard/$view", $data);
+        }
+
+        // Otherwise → load default view
+        return view("dashboard.$view", $data);
+    }
+    private function detectLocale(Request $request)
+    {
+        // 1. Check route
+        $locale = $request->route('locale');
+
+        if ($locale) {
+            return $locale;
+        }
+
+        // 2. Check URL manually
+        $uri = $request->getRequestUri(); // example: /en-us/login
+
+        foreach (['en-us','en-au','en-gb','en-ca'] as $lang) {
+            if (strpos($uri, "/$lang/") === 0 || strpos($uri, "/$lang") === 0) {
+                return $lang;
+            }
+        }
+
+        // 3. Default → no locale
+        return null;
+    }
     public function index()
     {
         $user = Auth::user();
-        return view('dashboard.dashboard', compact('user'));
+        return $this->loadAuthView('dashboard', compact('user'));
     }
     public function profile()
     {
         $user = Auth::user();
-        return view('dashboard.profile', compact('user'));
+        return $this->loadAuthView('profile', compact('user'));
     }
     public function getCurrencies($country_code)
     {
@@ -47,17 +80,17 @@ class DashboardController extends Controller
         $organisationDetails = Organisation::where('id',$userDetails->organisation_id)->first();
         $status = $organisationDetails->status;
         }
-        return view('dashboard.registerorg', compact('user','countries','status'));
+        return $this->loadAuthView('registerorg', compact('user','countries','status'));
     }
     public function knowledgebase()
     {
         $user = Auth::user();
-        return view('dashboard.knowledgebase', compact('user'));
+        return $this->loadAuthView('knowledgebase', compact('user'));
     }
     public function changePassword()
     {
         $user = Auth::user();
-        return view('dashboard.changepassword', compact('user'));
+        return $this->loadAuthView('changepassword', compact('user'));
     }
     public function profileUpdate(Request $request)
     {

@@ -34,7 +34,7 @@
     }
 @endphp
   <!-- Download Section Start -->
-    <section class="download_section">
+    <section id="download"  class="download_section">
         <h2>Download</h2>
         <img src="{{ url('public/assets/img/qr-code.svg') }}" alt="qr-code" class="image">
         <div class="qrcode_bx mt-5">
@@ -89,7 +89,7 @@
                             <h6>Company</h6>
                             <ul>
                                 <li><a href="{{url('/')}}">Home</a></li>
-                                <li><a href="https://www.agilis.dating/about-us.html">About Us</a></li>
+                                <li><a href="{{ locale_route('about.us')}}">About Us</a></li>
                                 <li><a href="mailto:help@agilis.dating">Contact Us</a></li>
                             </ul>
                         </div>
