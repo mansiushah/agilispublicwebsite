@@ -7,4 +7,5 @@
     <link rel="stylesheet" href="{{ url('public/assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url('public/assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ url('public/assets/css/responsive.css') }}">
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="769f388f-e6b6-4d4e-a560-7e7470849aee" data-blockingmode="auto" type="text/javascript"></script>
 </head>

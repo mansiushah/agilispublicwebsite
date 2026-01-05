@@ -106,7 +106,7 @@
   	@include('includes.footer')
     <!-- Footer Section CSS End -->
     <!-- Tosat Meeeage Statrt -->
-    <div class="toast" id="toast">
+<!--     <div class="toast" id="toast">
         <div class="container-fluid">
             <div class="toast_subdiv">
                 <div class="toast-message">
@@ -119,7 +119,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Tosat Meeeage End -->
 </body>
 

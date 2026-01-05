@@ -5,6 +5,21 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\{DashboardController};
 use Illuminate\Http\Request;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\ApiAssistantController;
+
+// API Assistant Routes
+Route::prefix('api-assistant')->name('api-assistant.')->group(function () {
+    Route::get('/', function () {
+        return view('api-assistant.index');
+    })->name('index');
+
+    Route::post('/chat', [ApiAssistantController::class, 'chat'])->name('chat');
+    Route::post('/clear', [ApiAssistantController::class, 'clearConversation'])->name('clear');
+    Route::get('/welcome', [ApiAssistantController::class, 'welcome'])->name('welcome');
+});
+
+
+
 Route::get('/get-tax-registrations/{country_code}', [DashboardController::class, 'getTaxRegistrations'])->name('txtcheck');
 Route::get('/get-currencies/{country_code}', [DashboardController::class, 'getCurrencies'])->name('get.currencies');
 Route::post('organisations-store', [DashboardController::class, 'storeOrganisation'])->name('organisations.store');
@@ -61,7 +76,7 @@ Route::get('/app-terms',[PageController::class, 'ApptermsAndConditionsDefault'])
 Route::get('/cookie-policy',[PageController::class, 'cookiePolicyUseDefault'])->name('cookie.policy');
 Route::get('/acceptable-use-policy',[PageController::class, 'acceptableUseDefault'])->name('acceptable.use.policy');
 Route::get('/about-us',[PageController::class, 'aboutusUseDefault'])->name('about.us');
-Route::get('/offers',[PageController::class, 'offersUseDefault'])->name('offer');
+Route::get('/offers',[PageController::class, 'offersUseDefault'])->name('offers');
 Route::get('/slavery',[PageController::class, 'mordenSlaveryUseDefault'])->name('morden-slavery');
 Route::get('/choose-your-country',[PageController::class, 'chooseYourCountryDefult'])->name('choose-your-country');
 //Route::get('choose-your-country',function () { return view('choose-your-country')->with('title', 'Choose Your Country');});
