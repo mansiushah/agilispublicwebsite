@@ -104,8 +104,8 @@ class LoginController extends Controller
         ]);
         $user = auth()->guard('web')->user($user);
         // Send OTP via email
-        Mail::to($user->email)->send(new \App\Mail\Verification($user->full_name,$otp));
-        return redirect()->route('verify.otp.form')->with('email', $user->email);
+        Mail::to($request->email)->send(new \App\Mail\Verification($request->full_name,$otp));
+        return redirect()->route('verify.otp.form')->with('email', $request->email);
     }
     public function showVerifyOtp(Request $request)
     {
@@ -152,12 +152,24 @@ class LoginController extends Controller
         $user->otp_verify = 0;
         $user->save();
         $email = $email;
-
-        Mail::to($email)->send(new \App\Mail\ResetUserPassword($user->full_name,$otp));
+         try {
+               Mail::to($email)->send(new \App\Mail\ResetUserPassword($user->full_name,$otp));
+            session([
+            'reset_email' => $request->email
+        ]);
         $request->session()->flash('error', 'OTP resend.');
         $request->session()->flash('class', 'red');
         //$request->session()->flash('type', $verification);
          return view('auth.verify', compact('email'));;
+
+        } catch (\Exception $e) {
+            if (str_contains($e->getMessage(), 'Inactive recipients')) {
+                // Mark email as invalid in DB
+                $request->session()->flash('error', 'Can not send mail on this email');
+                return back()->with(['email' => $email]);
+                //User::where('email', $request->email)->update(['email_status' => 'inactive']);
+            }
+        }
     }
     public function logout()
     {
